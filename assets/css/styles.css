@@ -1,1 +1,8 @@
 /* TODO Color Scheme, Fonts */
+
+
+body {
+    /* color: white; */
+    background-color: gray;
+    margin: auto;
+}
