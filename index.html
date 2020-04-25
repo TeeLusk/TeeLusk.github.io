@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO Optimize for mobile/multiple views  -->
     <!-- Possible to use Vue? -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/main.js"></script>
     <title>WDD 230</title>
 </head>
 
@@ -14,12 +14,24 @@
     <!-- HEADER -->
     <header>
         <h1>Tyler Lusk</h1>
-        <img src="./assets/img/picture.jpg">
+        
     </header>
 
     <!-- MAIN SECTION -->
     <main>
-        <section>
+        <div id="main-image">
+            <img src="./assets/img/picture.jpg">
+        </div>
+        
+        <section id="assignment-portal">
+            <h2>WDD 230: Assignment Portal</h2>
+            <ul>
+                <li>Week 1</li>
+                <li>Week 2</li>
+                <li>Week 3</li>
+                <li>Week 4</li>
+                <li>Week 5</li>
+            </ul>
 
         </section>
         
@@ -27,8 +39,13 @@
     </main>
 
     <!-- FOOTER -->
-    <footer><span>&copy; Tyler Lusk | WDD 230 | </span><a href="https://developer.mozilla.org/en-US/">MDN
-            Documentation</a></footer>
+    <!-- TODO Get year by JS -->
+    <!-- TODO Get last updated -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Tyler Lusk | WDD 230 | <a href="https://developer.mozilla.org/en-US/">MDN
+            Documentation</a> | BYU-Idaho Last Updated: </p>
+        
+    </footer>
 </body>
 
 </html>

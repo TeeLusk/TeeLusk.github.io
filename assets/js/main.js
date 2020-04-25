@@ -1,8 +1,31 @@
-//TODO year is pulled using javascript
-let year = new Date();
-let currentYear = year.getFullYear();
+//TODO year/date modified using properties/JS
+let date = new Date();
+
+let days = 
+["Sunday", 
+"Monday", 
+"Tuesday", 
+"Wednesday", 
+"Thursday", 
+"Friday", 
+"Saturday"];
+
+let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+    ];
+
+let currentYear = date.getFullYear() + " ";
 console.log(currentYear);
 
-
-
-//TODO last updated to pull from github last commmit
+document.getElementById("currentYear").textContent = currentYear;

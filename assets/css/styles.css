@@ -1,8 +1,17 @@
-/* TODO Color Scheme, Fonts */
+/* TODO Color Scheme, Fonts, Mobile Optimized */
 
 
 body {
     /* color: white; */
-    background-color: gray;
+    background-color: rgb(216, 216, 216);
     margin: auto;
+    padding: auto;
+    text-align: center;
 }
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
