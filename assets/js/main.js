@@ -1,31 +1,13 @@
-//TODO year/date modified using properties/JS
-let date = new Date();
+//Year
+var date = new Date();
 
-let days = 
-["Sunday", 
-"Monday", 
-"Tuesday", 
-"Wednesday", 
-"Thursday", 
-"Friday", 
-"Saturday"];
+var currentYear = date.getFullYear().toString();
+document.getElementById("year").textContent = currentYear;
 
-let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-    ];
+//Last Updated
 
-let currentYear = date.getFullYear() + " ";
-console.log(currentYear);
+var lastUpdated = new Date(document.lastModified);
+var lastUpdatedString = `${lastUpdated.toLocaleDateString()} ${lastUpdated.toLocaleTimeString()}`;
+//For future, use momentjs
 
-document.getElementById("currentYear").textContent = currentYear;
+document.getElementById("updatedOn").textContent = lastUpdatedString;

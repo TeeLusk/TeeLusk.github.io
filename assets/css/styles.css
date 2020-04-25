@@ -3,13 +3,16 @@
 
 body {
     /* color: white; */
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(182, 184, 185);
     margin: auto;
     padding: auto;
     text-align: center;
 }
 #assignment-portal {
-    
+   background-color: rgb(80, 80, 245);
+   color: white; 
+   padding: 0.25em;
+   margin: 1em;
     
 }
 
@@ -17,5 +20,6 @@ ul {
     text-decoration: none;
     list-style: none;
 }
+
 
 

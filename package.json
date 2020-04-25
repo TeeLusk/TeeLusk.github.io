@@ -1,0 +1,22 @@
+{
+  "name": "wdd-230-site",
+  "version": "1.0.0",
+  "description": "WDD 230 Site",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeeLusk/TeeLusk.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeeLusk/TeeLusk.github.io/issues"
+  },
+  "homepage": "https://github.com/TeeLusk/TeeLusk.github.io#readme",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
