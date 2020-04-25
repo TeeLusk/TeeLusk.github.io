@@ -8,8 +8,12 @@ body {
     padding: auto;
     text-align: center;
 }
+#assignment-portal {
+    
+    
+}
 
-li {
+ul {
     text-decoration: none;
     list-style: none;
 }
