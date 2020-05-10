@@ -16,8 +16,33 @@
 **Media Queries**
 
 (Design Principles) Three different queries for small(one column), medium (two columns) and large (three)
+
+
+**Fonts**
+<link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto&display=swap" rel="stylesheet">
+
+#### Header: Passion one
+* Font-size: 40px
+* font-family: 'Passion One', cursive;
+
+#### Body: Roboto
+* font-size: 
+* font-family: 'Roboto', sans-serif;
+
+
+
+
+
+
+
+
+
 ## Common Errors
 
 
 **Powerline not working for BUW (Bash Ubuntu on WIndows)**
 [Link](https://devpro.media/install-powerline-windows/#)
+
+Git asking for username and password every time
+
+See [freeCodeCamp link](https://www.freecodecamp.org/news/how-to-fix-git-always-asking-for-user-credentials/)
