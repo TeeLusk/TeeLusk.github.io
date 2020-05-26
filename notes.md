@@ -17,6 +17,8 @@
 
 (Design Principles) Three different queries for small(one column), medium (two columns) and large (three)
 
+* Write CSS for small screen, media queries for larger screens
+
 
 **Fonts**
 <link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto&display=swap" rel="stylesheet">
