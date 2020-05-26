@@ -4,11 +4,11 @@
 
 #content {
     /* color: white; */
-    display: grid;
+    /* display: grid; */
     /* display: inline; */
     grid-template-rows: 10% 1fr 10%;
     grid-template-columns: 1fr 250px 1fr;
-    background-color: rgb(182, 184, 185);
+    
     margin: auto;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -36,8 +36,8 @@ main {
     background-color: rgb(80, 80, 245);
     color: white;
     padding: 0.1em;
-    margin: .5em;
-    justify-content: center;
+    margin: auto;   
+    width: 500px;
 }
 
 ul {
@@ -49,4 +49,16 @@ footer {
     grid-row: 3/4;
     grid-column: 2/3;
     font-size: small;
+    background-color: rgb(182, 184, 185);
+    width: 500px;
+    margin: auto;
+    padding: .5em;
+}
+
+a:visited {
+    color: white;
+}
+
+a {
+    color: black;
 }

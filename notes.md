@@ -18,6 +18,7 @@
 (Design Principles) Three different queries for small(one column), medium (two columns) and large (three)
 
 * Write CSS for small screen, media queries for larger screens
+    * In the case of grid templates, if you dont' expressly overwrite it, it will take the smaller screen size media query templates instead
 
 
 **Fonts**
@@ -25,11 +26,11 @@
 
 #### Header: Passion one
 * Font-size: 40px
-* font-family: 'Passion One', cursive;
+* font-family: 'Open Sans', sans-serif;
 
 #### Body: Roboto
-* font-size: 
-* font-family: 'Roboto', sans-serif;
+* font-size: Depends on body text
+* font-family: 'Open Sans', sans-serif;
 
 
 
