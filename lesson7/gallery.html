@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Possible to use Vue? -->
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Website Planning Document</title>
+</head>
+
+<body>
+    <div id="content">
+        <!-- HEADER -->
+        <header>
+            <h1>WhatsMyWeatherLike.com
+                <img id="header-icon" src="./img/icon.png" height="65" alt="Logo Icon">
+            </h1>
+        </header>
+
+        <!-- NAV -->
+        <!-- TODO Hamburger Menu -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- MAIN -->
+        <main class="gallery">
+
+            <figure class="image-tag">
+                <picture>
+                    <img src='img/placeholder.png' data-src='img/weather1.jpg' alt='NAME'>
+                </picture>
+                <p>Clouds over the water</p>
+            </figure>
+
+            <figure class="image-tag">
+                <picture>
+                    <img src='img/placeholder.png' data-src='img/weather2.jpg' alt='NAME'>
+                </picture>
+                <p>Palm tree blowing in the wind</p>
+            </figure>
+
+            <figure class="image-tag">
+                <picture>
+                    <img src='img/placeholder.png' data-src='img/weather3.jpg' alt='NAME'>
+                </picture>
+                <p>Sattelite view of hurricane</p>
+            </figure>
+
+            <figure class="image-tag">
+                <picture>
+                    <img src='img/placeholder.png' data-src='img/weather4.jpg' alt='NAME'>
+                </picture>
+                <p>Large storm clouds</p>
+            </figure>
+
+            <figure class="image-tag">
+                <picture>
+                    <img src='img/placeholder.png' data-src='img/weather5.jpg' alt='NAME'>
+                </picture>
+                <p>Clear ice formation</p>
+            </figure>
+
+            <figure class="image-tag">
+                <picture>
+                    <img src='img/placeholder.png' data-src='img/weather6.jpg' alt='NAME'>
+                </picture>
+                <p>Tornado and lightning strike</p>
+            </figure>
+
+            <figure class="image-tag">
+                <picture>
+                    <img src='img/placeholder.png' data-src='img/weather7.jpg' alt='NAME'>
+                </picture>
+                <p>hard rain in the city</p>
+                <p></p>
+            </figure>
+
+            <figure class="image-tag">
+                <picture>
+                    <img src='img/placeholder.png' data-src='img/weather8.jpg' alt='NAME'>
+                </picture>
+                <p>Volcanic lightning storm</p>
+            </figure>
+
+            <figure class="image-tag">
+                <picture>
+                    <img src='img/placeholder.png' data-src='img/weather9.jpg' alt='NAME'>
+                </picture>
+                <p>Snowy pathway</p>
+            </figure>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; <span id="year"></span> Tyler Lusk | WhatsMyWeatherLike.com | <a
+                    href="https://developer.mozilla.org/en-US/">MDN
+                    Documentation</a> | BYU-Idaho Last Updated: <span id="updatedOn"></span></p>
+
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/lazyload.js"></script>
+</body>
+
+</html>
