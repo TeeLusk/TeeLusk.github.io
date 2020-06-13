@@ -1,0 +1,28 @@
+/* The color scheme includes #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 along with standard white and black. */
+
+
+/* Use a maximum of one class or id selector. */
+
+/* Use one instance of the first-child or nth:child() pseudo classes. */
+
+* {
+    border: 1px solid black;
+    font-family: Ubuntu, sans-serif;
+}
+
+thead th {
+    background-color: #e7f0ed;
+    
+}
+
+tbody tr th {
+
+}
+
+tbody tr {
+    background-color: #e7ffed;
+}
+
+tr:nth-last-of-type(even) {
+    background: #7fb9c2;
+}

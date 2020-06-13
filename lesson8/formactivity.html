@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Activity</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Form Activity</h1>
+    </header>
+    <main>
+        <form action="./thanks.html" method="POST" class="sample-form">
+            <label for="fName">Full Name: </label>
+            <!-- for in label correlates with id in input -->
+            <input type="text" name="fName" id="fName">
+            <span>Are you in danger?</span>
+
+            <!-- Make same radio button group with same name -->
+            <input type="radio" name="danger" id="yes" value="yes">
+            <label for="yes">Yes</label>
+            
+            <input type="radio" name="danger" id="no" value="no">
+            <label for="no">No</label>
+            
+            <input type="radio" name="danger" id="maybe" value="maybe">
+            <label for="maybe">Maybe</label>
+            
+    
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

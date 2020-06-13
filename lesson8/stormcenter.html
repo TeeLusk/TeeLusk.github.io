@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Possible to use Vue? -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Storm Center Form</title>
+</head>
+
+<body>
+    <div id="content">
+        <!-- HEADER -->
+        <header>
+            <h1>WhatsMyWeatherLike.com
+                <img id="header-icon" src="./img/icon.png" height="65" alt="Logo Icon">
+            </h1>
+        </header>
+
+        <!-- NAV -->
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="./stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+            <section>
+            <form id="storm-form" action="thanks.html">
+                <h2>Submit Your Storm Center Information</h2>
+                <div class="form-item">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" pattern="[a-z A-Z]" minlength="5" required>
+                    <p id="fullNameHelp">Name must be more than 5 charachters. No numbers</p>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="sample.email@email.com">
+                </div>
+
+                <div class="form-item">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="zip">Zip</label>
+                    <input type="number" name="zip" id="zip" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="date">Storm Date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+                <div class="form-item">
+                    <label for="stormType">Storm Type</label>
+                    <input list="stormList" name="stormType" id="stormType">
+                    <datalist id="stormList">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </div>
+
+
+                <div class="form-item">
+                    <label for="severityRange">Severity</label>
+                    <input type="range" min="1" max="10" value="1" id="severityRange" step="1"
+                        oninput="outputUpdate(value)">
+                    <output for="severityRange" id="severityOutput">1</output>
+                </div>
+
+                <div class="form-item">
+                    <label for="stormLocation">Where is the storm happening?<br></label>
+                    <select id="stormLocation" name="stormLocation">
+                        <option value="select" disabled selected>Select Region ...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish haven">Fish haven</option>
+
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <span>Are you in immediate danger?<br></span>
+                    <input type="radio" name="danger" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" name="danger" id="no" value="no">
+                    <label for="no">No</label>
+
+                    <input type="radio" name="danger" id="maybe" value="maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+
+                <div class="form-item">
+                    <label for="additionalComments">Additonal Comments<br></label>
+                    <textarea name="addComments" id="additionalComments" rows="4" cols="33" placeholder="Any additional comments?"></textarea>
+                </div>
+
+                <div class="form-item">
+                    <button type="submit" onsubmit="">Submit</button>
+                </div>
+
+            </form>
+        </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; <span id="year"></span> Tyler Lusk | WhatsMyWeatherLike.com | <a
+                    href="https://developer.mozilla.org/en-US/">MDN
+                    Documentation</a> | BYU-Idaho Last Updated: <span id="updatedOn"></span></p>
+
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/lazyload.js"></script>
+</body>
+
+</html>
