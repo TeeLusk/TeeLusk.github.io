@@ -200,6 +200,7 @@ textarea.addcCommets {
 
 
 /* MEDIA QUERIES */
+/* Medium */
 @media (min-width: 600px) {
     nav ul {
         display:flex;
@@ -214,6 +215,7 @@ textarea.addcCommets {
 
 }
 
+/* Large */
 @media (min-width: 950px) {
     
 }

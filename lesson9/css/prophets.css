@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+body {
+    background-color: lightblue;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cards {
+    display: block;
+}
+
+section {
+    background: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: .5em;
+    text-align: center;
+}
+
+section img {
+    height: 200px;
+    padding-bottom: 1em;
+}
+
+section p {
+    margin: 0px 0px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section > p:nth-child(5) {
+    padding-bottom: 1em;
+}
+
+
+@media (min-width: 600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Large */
+@media (min-width: 950px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }  
+}
+
+
+
