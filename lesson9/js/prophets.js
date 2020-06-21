@@ -38,16 +38,16 @@ fetch(requestURL)
             card.appendChild(dateOfDeath);
 
             document.querySelector('div.cards').appendChild(card);
-            
+
         }
 
         //Foreach specifc to arrays
-        
+
         //For...in meant for objects
         // for (const key in object) {
         //     if (object.hasOwnProperty(key)) {
         //         const element = object[key];
-                
+
         //     }
         // }
 
@@ -56,5 +56,3 @@ fetch(requestURL)
     .catch(function (error) {
         console.log('Fetch error: ', error.message);
     })
-
-    
