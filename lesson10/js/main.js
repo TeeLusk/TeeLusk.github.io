@@ -29,7 +29,7 @@ function outputUpdate(range) {
 
 // Current Fetch
 
-const currentURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=4447a91324b56ff7dc35262e118be15a';
+const currentURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=4447a91324b56ff7dc35262e118be15a';
 
 
 fetch(currentURL)
