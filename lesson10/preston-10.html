@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Preston Weather Page</title>
+</head>
+
+<body>
+    <div id="content">
+        <!-- HEADER -->
+        <header>
+            <h1>WhatsMyWeatherLike.com
+                <img id="header-icon" src="./img/icon.png" height="65" alt="Logo Icon">
+            </h1>
+        </header>
+
+        <!-- NAV -->
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="../lesson9/index.html">Home</a></li>
+                <li><a href="./preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+            <section>
+                <h2>Weather Summary</h2>
+                <p>
+                    Currently: <span id="condition"></span>
+                </p>
+                <p>
+                    Temperature: <span id="temp"></span>&deg; F
+                </p>
+                <p>
+                    Humidity: <span id="humidity"></span>%
+                </p>
+                <p>
+                    Wind Speed: <span id="windSpeed"></span> MPH
+                </p>
+                <p>
+                    Wind Chill: <span id="windChill"></span>&deg; F
+                </p>
+            </section>
+
+
+            <section id="forecast">
+                <h2>5 Day Forecast</h2>
+                <table>
+                    <tbody id="forecastTable">
+                        <tr id="forecastDays"><td></td></tr>
+                        <tr id="forecastData"><td></td></tr>
+                    </tbody>
+                </table>
+
+
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; <span id="year"></span> Tyler Lusk | WhatsMyWeatherLike.com | <a
+                    href="https://developer.mozilla.org/en-US/">MDN
+                    Documentation</a> | <a href="https://openweathermap.org/api">Open Weather API</a> | BYU-Idaho | Last
+                Updated: <span id="updatedOn"></span></p>
+
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

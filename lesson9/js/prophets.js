@@ -8,7 +8,7 @@ fetch(requestURL)
         throw new ERROR('Network response was not ok');
     })
     .then(function (jsonObject) {
-        console.log(jsonObject); // temporary checking for valid response and data parsing
+        // console.log(jsonObject); // temporary checking for valid response and data parsing
 
         const prophets = jsonObject['prophets'];
 
@@ -38,16 +38,16 @@ fetch(requestURL)
             card.appendChild(dateOfDeath);
 
             document.querySelector('div.cards').appendChild(card);
-
+            
         }
 
         //Foreach specifc to arrays
-
+        
         //For...in meant for objects
         // for (const key in object) {
         //     if (object.hasOwnProperty(key)) {
         //         const element = object[key];
-
+                
         //     }
         // }
 
@@ -56,3 +56,5 @@ fetch(requestURL)
     .catch(function (error) {
         console.log('Fetch error: ', error.message);
     })
+
+    

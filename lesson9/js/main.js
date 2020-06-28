@@ -39,7 +39,7 @@ fetch(requestURL)
         throw new ERROR('Network response was not ok');
     })
     .then(function (jsonObject) {
-        console.log(jsonObject); // temporary checking for valid response and data parsing
+        // console.log(jsonObject); // temporary checking for valid response and data parsing
 
         const townList = jsonObject['towns'];
 

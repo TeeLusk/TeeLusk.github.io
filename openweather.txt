@@ -1,0 +1,5 @@
+api.openweathermap.org/data/2.5/weather?id={city id}&appid={your api key}
+5604473
+4447a91324b56ff7dc35262e118be15a
+
+api.openweathermap.org/data/2.5/weather?id=5604473&appid=4447a91324b56ff7dc35262e118be15a
