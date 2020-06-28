@@ -50,12 +50,6 @@ fetch(currentURL)
             * currentTemp * Math.pow(currentWindSpeed, 0.16));
         windChill = (windChill > currentTemp) ? currentTemp: windChill;
 
-        console.log('Current:' + currentCondition);
-        console.log('Temp:' + currentTemp);
-        console.log('Humidity:' + currentHumidity);
-        console.log('Wind Speed:' + currentWindSpeed);
-        console.log('Chill:' + windChill);
-
         document.getElementById('condition').textContent = currentCondition;
         document.getElementById('temp').textContent = Math.round(currentTemp, 0);
         document.getElementById('humidity').textContent = currentHumidity;
