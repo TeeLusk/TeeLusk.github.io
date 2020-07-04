@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
 /* STATIC */
 #content {
     background: white;
     max-width: 1200px;
     margin: auto;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 header  {
@@ -12,10 +21,6 @@ header  {
     margin: 0;
     vertical-align: middle;
     min-width: 300px;
-}
-
-h1 {
-    /* padding-bottom: 1em; */
 }
 
 h3 {
@@ -75,6 +80,11 @@ nav ul li a:hover {
 	color: #36454f;
 }
 
+.active-page {
+	background-color: #bbb;
+	color: #36454f;
+}
+
 
 h1,
 h2,
@@ -89,6 +99,11 @@ h6 {
     padding-top: .5em;
     padding-bottom: .5em;
     
+}
+
+#fridayMessage {
+    font-size: 20px;
+    color: black; 
 }
 
 main {
@@ -111,11 +126,11 @@ main img {
 }
 
 footer {
-
     background: lightgray;
-    padding: .5em;
+    padding: .5em 1em;
     text-align: center;
     margin-top: 1em;
+    width: 100%;
 }
 
 section {
@@ -145,6 +160,20 @@ section span {
     font-weight: bold ;
 }
 
+.newsSection, .mapSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.mapSection img {
+    margin: auto;
+}
+
+.mapSectionText {
+    margin: auto;
+    text-align: center;
+}
+
 .form-item {
     margin: 1em;
 }
@@ -156,22 +185,21 @@ section span {
 }
 
 .form-item output {
-    color: red;
+    color: black;
 }
 
 .form-item input[type=radio] {
     display: inline;
 }
 
-textarea.addComments {
-    overflow: hidden;
-    max-width: 300px;
-    height: 100px;
-  }
+textarea {
+    width: 100%;
+}
 
 #fullNameHelp {
     font-size: small;
-    color: gray;
+    font-style: italic;
+    color: black;
     margin-top: 0px;
 }
 
@@ -179,6 +207,51 @@ textarea.addComments {
     display: flex;
 	flex-wrap: wrap;
 }
+
+
+/* Gallery */
+.image-tag {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+/* Weather Pages */
+
+section:nth-child(2) {
+    text-align: center;
+}
+
+table img {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+}
+
+section span {
+    font-size: 18px;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+td {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* EVENTS List */
+#eventsList li {
+    list-style: none;
+    padding: 5px;
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+}
+
 
 
 /* Responsive Menu */
@@ -208,6 +281,16 @@ textarea.addComments {
 }
 
 /* MEDIA QUERIES */
+/* Show Table */
+@media (min-width: 400px)
+{
+    #forecast {
+        display: block;
+    }
+}
+
+
+
 /* Medium */
 @media (min-width: 600px) {
     .navigation {
@@ -224,20 +307,31 @@ textarea.addComments {
 		display: none;
     }
 
-    section {
-        display: flex;
-        flex-wrap: wrap;
+    .gallery {
+        column-count: 2;
     }
 
-    section:nth-child(odd)      {
+    .newsSection {
         flex-direction: row-reverse;
     }
+    .mapSection {
+        flex-direction: row;
+    }
+
+
 }
 
 
 /* Large */
 @media (min-width: 950px) {
-    section {
-        display: inline;
+    .gallery {
+        column-count: 3;
+        column-gap: 1em;
+    }
+
+    /* Shadow Box Effect */
+
+    figure:hover {
+        box-shadow: 0 0 3px gray;
     }
 }

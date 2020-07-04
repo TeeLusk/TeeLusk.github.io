@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Preston Weather Page</title>
+</head>
+
+<body>
+    <div id="content">
+        <!-- HEADER -->
+        <header>
+            <h1>WhatsMyWeatherLike.com
+                <img id="header-icon" src="./img/icon.png" height="65" alt="Logo Icon">
+            </h1>
+            <span id="cityID" style="display: none;">5604473</span>
+        </header>
+
+        <!-- NAV -->
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./preston-10.html" class="active-page">Preston</a></li>
+                <li><a href="./soda-springs.html">Soda Springs</a></li>
+                <li><a href="./fish-haven.html">Fish Haven</a></li>
+                <li><a href="./stormcenter.html">Storm Center</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+            <h2 id="cityName">Preston</h2>
+
+            <section id="fridayMessageSection" class="hidden"><span id="fridayMessage"></span></section>
+
+            <section>
+                <h2>Weather Summary</h2>
+                <p>
+                    Currently: <span id="condition"></span>
+                </p>
+                <p>
+                    Temperature: <span id="temp"></span>&deg; F
+                </p>
+                <p>
+                    Humidity: <span id="humidity"></span>%
+                </p>
+                <p>
+                    Wind Speed: <span id="windSpeed"></span> MPH
+                </p>
+                <p>
+                    Wind Chill: <span id="windChill"></span>&deg; F
+                </p>
+            </section>
+
+
+            <section id="forecast">
+                <h2>5 Day Forecast</h2>
+                <table>
+                    <tbody id="forecastTable">
+                        <tr id="forecastDays">
+                            <td></td>
+                        </tr>
+                        <tr id="forecastData">
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Upcoming Events</h2>
+                <ul id="eventsList">
+                </ul>
+            </section>
+
+            <section>
+                <h2>
+                    Hands-free cell phone law goes into effect throughout Idaho
+                </h2>
+                <p style="bold;">By Cache Valley Daily -July 1, 2020</p>
+                <div class="newsSection">
+                    <img src="./img/distracted-driving.jpg" alt="distracted driving">
+                    <p>PRESTON, IDAHO — A new cellphone law in went into effect Wednesday, meant to keep drivers alert while
+                        behind the wheel. The statute could result in a warning or citation for motorists in the northern
+                        end of Cache Valley. <br>
+    
+                        The new Idaho State Code requires electronic devices to be in hands-free mode while driving,
+                        including when stopped at a red light or stop sign. The law basically makes holding a cell phone
+                        illegal while operating a vehicle.<br>
+    
+                        In a press release, the Idaho State Police said there are several changes for all motorists driving
+                        through the state.<br>
+                        <a href="https://www.kvnutalk.com/hands-free-cell-phone-law-goes-into-effect-throughout-idaho-cache-valley-daily/">Read Full Article</a>
+                    </p>
+                </div>
+            </section>
+
+
+            <section>
+                <h2>
+                    Where to Find Us
+                </h2>
+                <div class="mapSection">
+                    <img src="./img/byui_map.png" alt="BYU-I Map">
+                    <div class="mapSectionText">
+                        <p style="font-weight: bold;">WhatsMyWeatherLike<br>
+                        <p>525 S Center St </p>
+                        <p>Rexburg, ID 83460 <br></p>
+                        <p>(123) 456-7891<br>support@whatsmyweatherlike.com</p>
+                        <p>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; <span id="year"></span> Tyler Lusk | WhatsMyWeatherLike.com | <a
+                    href="https://developer.mozilla.org/en-US/">MDN
+                    Documentation</a> | <a href="https://openweathermap.org/api">Open Weather API</a> | BYU-Idaho | Last
+                Updated: <span id="updatedOn"></span></p>
+
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body {
+    width:450px;
+    column-count: 1;
+    text-align: center;
+    margin: auto;
+}
+
+img {
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+body img [src] {
+    filter: blur(0.2em);
+  }
+  
+body img [data-src] {
+    transition: filter 0.5s;
+  }
