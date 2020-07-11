@@ -1,0 +1,158 @@
+/* ------------------------------- */
+/* STATIC/ALL PAGES */
+
+/* FONT/ALIGNMENT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+h2, h3 {
+    font-size: 20px;
+}
+
+p, span, a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.width-wrapper {
+    max-width: 1000px;
+}
+
+
+/* COLOR */
+.row {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.ligrayRow {
+    background-color: lightgray;
+    width: 100%;
+}
+
+.blueRow {
+    background-color: #00b9d3;
+    width: 100%;
+}
+
+.blueRow p {
+    color: white;
+}
+
+/* HEADER */
+header {
+    background-color: #00b9d3;
+}
+
+
+#temple-logo {
+    height: 100px;
+    width: auto;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+/* NAVBAR */
+.active-page {
+	background-color: #bbb;
+	color: #36454f;
+}
+
+nav ul li a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+
+.navigation {
+	list-style: none;
+    padding: 0;
+    margin-top: 1px;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+    display: block;
+    font-size: 20px;
+	padding: 0.75rem;
+	text-align: left;
+    text-decoration: none;
+    border: 1px solid gray;
+	
+}
+
+.responsive li {
+	display: block;
+}
+
+
+
+
+/* ------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------- */
+/* MEDIA QUERIES */
+
+/* MEDIUM */
+@media (min-width: 600px) {
+    /* NAV */
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+    }
+
+    /* HEADER */
+    #temple-logo {
+        display: inline;
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+
+    h1 {
+        display: inline;
+    }
+
+
+
+}
+
+
+
+/* LARGE */
+
