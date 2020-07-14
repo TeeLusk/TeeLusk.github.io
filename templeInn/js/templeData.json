@@ -1,0 +1,105 @@
+{
+    "temples": [
+        {
+            "name": "Idaho Falls",
+            "photo": "./imgs/idahofalls.png",
+            "telephone": "(1) 208-522-7669",
+            "email": "idahofallstemple@churchofjesuschrist.org",
+            "address": [
+                "1000 Memorial Dr",
+                "Idaho Falls ID 83402-3410",
+                "United States"
+            ],
+            "services": [
+                "Clothing rental available",
+                "Cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "milestones": [
+                "3 March 1937: Announced",
+                "19 December 1939: Groundbreaking",
+                "23 September 1945: Dedicated", 
+                "4 June 2017: Rededicated"
+            ],
+            "closure-notice": "PHASE 1: TEMPLE OPEN FOR LIVING SEALINGS ONLY—Based on First Presidency direction, this temple has resumed limited operations. At this time, only husband-and-wife living sealings are being performed for members who have already received their endowment. Sealings will be performed by appointment only and limited to couples residing in a designated geographic area. For these sealings, the temple will have minimal staff and the number of guests will be limited. At this time, appointments may only be scheduled several weeks in advance. To schedule an appointment, please send an email to the temple using the link below and include the names of the couple, desired sealing date, phone numbers, and the best time to contact you. All government guidelines will be observed, including regulations related to travel, gatherings, sanitization, and safety. All patron housing, cafeteria, and clothing services remain closed. Please check this page regularly for updates.",
+            "additional-info": "https://www.churchofjesuschrist.org/temples/details/idaho-falls-idaho-temple?lang=eng"
+        },
+
+        {
+            "name": "Kansas City Missouri",
+            "photo": "./imgs/kansascity.png",
+            "telephone": "(1) 816-413-1430",
+            "email": "kansascitytemple@churchofjesuschrist.org",
+            "address": [
+                "7001 Searcy Creek Pkwy",
+                "Kansas City MO 64119-5336",
+                "United States"
+            ],
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "No distribution center nearby"
+            ],
+            "milestones": [
+                "4 October 2008: Announced",
+                "8 May 2010: Groundbreaking",
+                "6 May 2012: Dedicated"
+            ],
+            "closure-notice": "PHASE 1: TEMPLE OPEN FOR LIVING SEALINGS ONLY—Based on First Presidency direction, this temple has resumed limited operations. At this time, only husband-and-wife living sealings are being performed for members who have already received their endowment. Sealings will be performed by appointment only and limited to couples residing in a designated geographic area. For these sealings, the temple will have minimal staff and the number of guests will be limited. At this time, appointments may only be scheduled several weeks in advance. To schedule an appointment, please send an email to the temple using the link below and include the names of the couple, desired sealing date, phone numbers, and the best time to contact you. All government guidelines will be observed, including regulations related to travel, gatherings, sanitization, and safety. All patron housing, cafeteria, and clothing services remain closed. Please check this page regularly for updates.",
+            "additonal-info": "https://www.churchofjesuschrist.org/temples/details/kansas-city-missouri-temple?lang=eng"
+        },
+
+        {
+            "name": "St. Louis Missouri",
+            "photo": "./imgs/stlouis.png",
+            "telephone": "(1) 314-514-1122",
+            "email": "stlouistemple@churchofjesuschrist.org",
+            "address": [
+                "12555 N Outer Forty Dr",
+                "St. Louis MO 63141-8620",
+                "United States"
+            ],
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "milestones": [
+                "29 December 1990: Announced",
+                "30 October 1993: Groundbreaking",
+                "1 June 1997: Dedicated"
+            ],
+            "closure-notice": "PHASE 1: TEMPLE OPEN FOR LIVING SEALINGS ONLY—Based on First Presidency direction, this temple has resumed limited operations. At this time, only husband-and-wife living sealings are being performed for members who have already received their endowment. Sealings will be performed by appointment only and limited to couples residing in a designated geographic area. For these sealings, the temple will have minimal staff and the number of guests will be limited. At this time, appointments may only be scheduled several weeks in advance. To schedule an appointment, please send an email to the temple using the link below and include the names of the couple, desired sealing date, phone numbers, and the best time to contact you. All government guidelines will be observed, including regulations related to travel, gatherings, sanitization, and safety. All patron housing, cafeteria, and clothing services remain closed. Please check this page regularly for updates.",
+            "additonal-info": "https://www.churchofjesuschrist.org/temples/details/st.-louis-missouri-temple?lang=eng"
+        },
+
+        {
+            "name": "Chicago Illinois Temple",
+            "photo": "./imgs/chicago.png",
+            "telephone": "(1) 847-299-6500",
+            "email": "chicagotemple@churchofjesuschrist.org",
+            "address": [
+                "4151 W Lake Ave",
+                "Glenview IL 60025-1240",
+                "United States"
+            ],
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "milestones": [
+                "1 April 1981: Announced",
+                "13 August 1983 Groundbreaking",
+                "9 August 1985: Dedicated",
+                "8 October 1989: Rededicated"
+            ],
+            "closure-notice": "Based on First Presidency direction, temple activities have been temporarily adjusted. This temple has suspended all operations and ordinances until further notice. If you have an existing appointment for a sealing or your own endowment, you will be contacted by temple staff. Please check this page frequently for updates. Thank you.",
+            "additonal-info": "https://www.churchofjesuschrist.org/temples/details/chicago-illinois-temple?lang=eng"
+        }
+    ]
+}

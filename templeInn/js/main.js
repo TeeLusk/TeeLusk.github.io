@@ -11,7 +11,7 @@ hambutton.addEventListener('click', () => {
 
 
 // ----------------------------------------
-
+// CURRENT WEATHER FETCH
 
 
 
@@ -19,3 +19,4 @@ hambutton.addEventListener('click', () => {
 
 
 // ----------------------------------------
+// TEMPLES
