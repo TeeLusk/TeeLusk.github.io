@@ -12,27 +12,94 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     text-align: center;
     padding: 10px;
+    margin: auto;
 }
 
 h1 {
     font-size: 40px;
     color: white;
-    margin: 0;
 }
 
-h2, h3 {
-    font-size: 20px;
+h2 {
+    font-size: 35px;
 }
 
-p, span, a {
+h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+p, span, a, li, button {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    line-height: 1.5em;
 }
+
+p, span {
+    margin: 1.5em;
+}
+
+.warning, .warning a {
+    font-size: 16pt;
+    font-weight: bold;
+    color: red;
+}
+
+.emphasized-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav > ul > li > a {
+    margin: 0;
+} 
 
 .width-wrapper {
     max-width: 1000px;
+    text-align: left;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+.reverse-wrap {
+    flex-direction: row-reverse;
+}
+
+img {
+    margin: auto;
+    padding: 1.5em;
+    max-width: 500px;
+    width: 80%;
+    height: auto;
+}
+
+button {
+    background-color: #00b9d3;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    margin: auto;    
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+button:hover {
+    background-color: white;
+    border: #00b9d3 solid 2px;    
+    color: #00b9d3;
+}
+
+#mapImage {    
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+}
 
 /* COLOR */
 .row {
@@ -48,6 +115,7 @@ p, span, a {
 
 .blueRow {
     background-color: #00b9d3;
+    color: white;
     width: 100%;
 }
 
@@ -83,8 +151,9 @@ nav ul li a:hover {
 .navigation {
 	list-style: none;
     padding: 0;
-    margin-top: 0px;
+    margin: 0px
 }
+
 .navigation li:first-child {
 	display: block;
 }
@@ -109,8 +178,24 @@ nav ul li a:hover {
 
 
 /* ------------------------------- */
+/* TEMPLES PAGE STYLING */
+#templesPage .row .flexSection {
+    display: flex;
+    flex-direction: row;
+}
+
+#templesPage .row:nth-of-type(odd) {
+    background-color: lightgray;
+}
+
+#templesPage .row:nth-of-type(odd) .flexSection{
+    flex-direction: row-reverse;
+}
 
 
+#templesPage ul {
+    list-style: none;
+}
 
 
 
@@ -120,7 +205,7 @@ nav ul li a:hover {
 /* MEDIA QUERIES */
 
 /* MEDIUM */
-@media (min-width: 600px) {
+@media (min-width: 720px) {
     /* NAV */
     .navigation {
 		display: flex;
@@ -141,14 +226,16 @@ nav ul li a:hover {
         display: inline;
         position: absolute;
         right: 25px;
-        top: 15px;
+        top: 0;
     }
 
     h1 {
         display: inline;
     }
 
-
+    .width-wrapper {
+        flex-wrap: nowrap;
+    }
 
 }
 
