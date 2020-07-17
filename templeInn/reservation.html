@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/Salt_Lake_Temple_Silhouette.png" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="row blueRow">
+            <h1>Temple Inn & Suites</h1>
+            <img src="./img/Salt_Lake_Temple_Silhouette.svg" id="temple-logo" alt="Salt Lake Temple Silhouette">
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./temple.html">Temples</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./reservation.html" class="active-page">Reserve Now</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <div class="row">                
+            <h2>Plan Your Temple Trip Today!</h2>
+            <div class="width-wrapper">
+            	<form id="templeReservation" action="./thanks.html">
+            	    <div class="form-item">
+            	        <label for="fName">First Name</label>
+            	        <input type="text" pattern="[a-zA-Z\s]+" name="fName" id="fName" minlength="5" required>
+            	        <p id="fullNameHelp">**Name must be more than 5 characters. No numbers**</p>
+            	    </div>
+            
+            	    <div class="form-item">
+            	        <label for="lName">Last Name</label>
+            	        <input type="text" id="lName" required>
+            	    </div>
+            
+            	    <div class="form-item">
+            	        <label for="email">Email</label>
+            	        <input type="text" id="email" required>
+            	    </div>
+            
+            	    <div class="form-item">
+            	        <label for="phone">Phone Number</label>
+            	        <input type="text" id="phone">
+            	    </div>
+            
+            	    <div class="form-item">
+            	        <label for="homeCountry">Home State or Country</label>
+            	        <input type="text" id="homeCountry">
+            	    </div>
+            
+            	    <div class="form-item">
+            	        <label for="additionalComments">Additonal Comments<br></label>
+            	        <textarea name="addComments" id="additionalComments" rows="4" cols="33"
+            	            placeholder="Any additional comments?"></textarea>
+                    </div>
+                    
+                    <button type="submit">Reserve Now</button> 
+            	</form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div class="row ligrayRow">
+        <footer>
+            <span><a href="./resources.html">Resources</a></span>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

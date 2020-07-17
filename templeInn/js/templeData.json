@@ -3,6 +3,7 @@
         {
             "name": "Idaho Falls, Idaho",
             "photo": "./img/idaho-falls.png",
+            "cityID": "5596475",
             "telephone": "(1) 208-522-7669",
             "email": "iftemple@churchofjesuschrist.org",
             "address": [
@@ -29,6 +30,7 @@
         {
             "name": "Kansas City, Missouri",
             "photo": "./img/kansas-city.png",
+            "cityID": "4393217",
             "telephone": "(1) 816-413-1430",
             "email": "kscity@churchofjesuschrist.org",
             "address": [
@@ -54,6 +56,7 @@
         {
             "name": "St. Louis, Missouri",
             "photo": "./img/st-louis.png",
+            "cityID": "4407066",
             "telephone": "(1) 314-514-1122",
             "email": "stlouistemple@churchofjesuschrist.org",
             "address": [
@@ -79,6 +82,7 @@
         {
             "name": "Chicago, Illinois",
             "photo": "./img/chicago.png",
+            "cityID": "4887398",
             "telephone": "(1) 847-299-6500",
             "email": "chicagotemple@churchofjesuschrist.org",
             "address": [

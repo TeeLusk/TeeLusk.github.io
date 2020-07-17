@@ -9,15 +9,14 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
-    font-weight: bold;
     text-align: center;
     padding: 10px;
     margin: auto;
 }
 
 h1 {
-    font-size: 40px;
-    color: white;
+    font-size: 50px;
+    color: black;
 }
 
 h2 {
@@ -29,7 +28,7 @@ h3 {
     padding-bottom: 20px;
 }
 
-p, span, a, li, button {
+p, span, a, li, button, label {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -115,7 +114,7 @@ button:hover {
 
 .blueRow {
     background-color: #00b9d3;
-    color: white;
+    color: black;
     width: 100%;
 }
 
@@ -184,6 +183,11 @@ nav ul li a:hover {
     flex-direction: row;
 }
 
+.flexSection {
+    max-width: 1000px;
+    margin: auto;
+}
+
 #templesPage .row:nth-of-type(odd) {
     background-color: lightgray;
 }
@@ -195,10 +199,44 @@ nav ul li a:hover {
 
 #templesPage ul {
     list-style: none;
+    padding-left: 0;
 }
 
+#templesPage img {
+    margin: 0 20px;
+}
 
+.noticeText {
+    width: 450px;
+    margin: auto;
+    font-weight: bold;
+}
 
+/* ------------------------------------- */
+/* RESERVATION PAGE */
+#templeReservation {
+    display: flex;
+    flex-direction: column;
+}
+.form-item {
+    padding: 10px;
+}
+
+form
+
+.form-item p {
+    margin: 0;
+}
+
+.form-item input {
+    display: block;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 5px;
+}
 
 
 /* ------------------------------- */
