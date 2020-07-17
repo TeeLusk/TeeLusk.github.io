@@ -24,17 +24,43 @@
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
-            <li><a href="./index.html" >Home</a></li>
-            <li><a href="./temple.html" >Temples</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./temple.html">Temples</a></li>
             <li><a href="./services.html" class="active-page">Services</a></li>
             <li><a href="./reservation.html">Reserve Now</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
         </ul>
 
     </nav>
 
     <!-- MAIN -->
     <main>
-        
+        <!-- BUTTONS -->
+        <div class="row">
+            <h2>What Are You Looking For?</h2>
+            <button onclick="location.href='#reception'">Wedding Reception <br> Services</button>
+            <button onclick="location.href='#fullTime'">Full-Time Missionary <br> Services</button>
+        </div>
+
+        <div class="row ligrayRow" id="reception">
+            <h3>Reception Services</h3>
+            <div class="width-wrapper">
+                <img src="./img/wedding.png" alt="Wedding Catering">
+                <p>Temple Inn & Suites provides world-class catering so you don't have another thing to worry about for your wedding. Need a venue? We've got you covered with various sized rooms to meet your needs. </p>
+                <p>Need help with decorating? We've got you covered with several themes packages as well an in-house interior designer to help.</p>
+                <p>*Note: Only in select locations. Contact us for more details</p>
+            </div>
+        </div>
+
+        <div class="row" id="fullTime">
+            <h3>Full-Time Missionary Services</h3>
+            <div class="width-wrapper reverse">
+                <img src="https://via.placeholder.com/500" alt="Missionary">
+                <p>The last thing you want to worry about when serving a full time mission is worrying about where you're
+                    going to stay for the night. Temple Inn & Suites offers a wide variety of inexpensive options
+                </p>
+            </div>
+        </div>
     </main>
 
     <!-- FOOTER -->

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/Salt_Lake_Temple_Silhouette.png" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="row blueRow">
+            <h1>Temple Inn & Suites</h1>
+            <img src="./img/Salt_Lake_Temple_Silhouette.svg" id="temple-logo" alt="Salt Lake Temple Silhouette">
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./temple.html">Temples</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./reservation.html">Reserve Now</a></li>
+            <li><a href="./contact.html" class="active-page">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <div class="row">
+            <h2>Contact Us</h2>
+            <div class="width-wrapper">
+                <form action="./thanks.html" id="contactUs">
+                    <div class="form-item">
+                        <label for="fName">First Name</label>
+                        <input type="text" pattern="[a-zA-Z\s]+" name="fName" id="fName" minlength="5" required>
+                        <p id="fullNameHelp">**Name must be more than 5 characters. No numbers**</p>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="lName">Last Name</label>
+                        <input type="text" id="lName" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <button type="submit">Contact Us</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="row ligrayRow">
+            <h2>Where to Find Us</h2>
+            <div class="width-wrapper">
+                <img src="./img/map.png" alt="Map" id="mapImage">
+                <div class="text emphasized-text">
+                    <p>
+                        4800 Montgomery Ln<br>
+                        #300<br>
+                        MD 20814
+                    </p>
+                    <p>
+                        1 (240) 555-5545
+                    </p>
+                    <p>support@templeinn.com</p>
+                    <p>
+                        <i class="fa fa-facebook-square" aria-hidden="true"><a href="#"></a></i>
+                        <i class="fa fa-pinterest-square" aria-hidden="true"><a href="#"></a></i>
+                        <i class="fa fa-twitter-square" aria-hidden="true"><a href="#"></a></i>
+                        <i class="fa fa-linkedin-square" aria-hidden="true"><a href="#"></a></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div class="row ligrayRow">
+        <footer>
+            <span><a href="./resources.html">Resources</a></span>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

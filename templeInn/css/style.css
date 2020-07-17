@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap');
 /* ------------------------------- */
 /* STATIC/ALL PAGES */
 
 /* FONT/ALIGNMENT */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -96,8 +99,8 @@ button:hover {
 
 #mapImage {    
     width: 90%;
-    max-width: 400px;
     height: auto;
+    margin: 0;
 }
 
 /* COLOR */
@@ -120,6 +123,10 @@ button:hover {
 
 .blueRow p {
     color: white;
+}
+
+.footer {
+    border-top: 2px white solid;
 }
 
 /* HEADER */
@@ -222,7 +229,9 @@ nav ul li a:hover {
     padding: 10px;
 }
 
-form
+form {
+    margin: auto;
+}
 
 .form-item p {
     margin: 0;
@@ -238,6 +247,11 @@ textarea {
     border-radius: 5px;
 }
 
+/* --------------------------------- */
+/* CONTACT PAGE */
+#contactUs button {
+    margin-left: 10px;
+}
 
 /* ------------------------------- */
 /* MEDIA QUERIES */
