@@ -7,6 +7,12 @@ hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('responsive')
 }, false);
 
+//-----------------------------------------
+//SCROLL TO TOP
+function topFunction() {
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
+
 
 
 // ----------------------------------------
@@ -28,6 +34,7 @@ if (document.getElementById('templesPage')) {
             templeList.forEach(element => {
                 let div = document.createElement('div');
                 div.className = "row";
+                div.id = `${element.id}`;
                 let flexSection = document.createElement('div');
                 flexSection.className = 'flexSection';
                 let textSection = document.createElement('div');
@@ -43,10 +50,15 @@ if (document.getElementById('templesPage')) {
                 notice.className = "noticeText";
                 let link = document.createElement('p');
                 let weather = document.createElement('p');
+                let button = document.createElement('button');
+                button.classname = 'topButton';
 
                 address.innerHTML = '<h3>Contact Information</h3>';
                 milestones.innerHTML = '<h3>Milestones</h3>';
                 services.innerHTML = '<h3>Services</h3>';
+
+                button.setAttribute("onclick", 'topFunction()');
+                button.innerText = 'Go to top';
 
                 img.src = element.photo;
                 img.setAttribute('alt', `${element.name} Temple`);
@@ -117,6 +129,7 @@ if (document.getElementById('templesPage')) {
                 div.appendChild(milestones);
                 div.appendChild(notice);
                 div.appendChild(link);
+                div.appendChild(button);
                 
                 document.getElementById('templesPage').appendChild(div);
             });

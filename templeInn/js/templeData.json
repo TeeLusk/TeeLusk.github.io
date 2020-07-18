@@ -2,6 +2,7 @@
     "temples": [
         {
             "name": "Idaho Falls, Idaho",
+            "id": "idaho-falls",
             "photo": "./img/idaho-falls.png",
             "cityID": "5596475",
             "telephone": "(1) 208-522-7669",
@@ -29,6 +30,7 @@
 
         {
             "name": "Kansas City, Missouri",
+            "id": "kansas-city",
             "photo": "./img/kansas-city.png",
             "cityID": "4393217",
             "telephone": "(1) 816-413-1430",
@@ -55,6 +57,7 @@
 
         {
             "name": "St. Louis, Missouri",
+            "id": "st-louis",
             "photo": "./img/st-louis.png",
             "cityID": "4407066",
             "telephone": "(1) 314-514-1122",
@@ -81,6 +84,7 @@
 
         {
             "name": "Chicago, Illinois",
+            "id": "chicago",
             "photo": "./img/chicago.png",
             "cityID": "4887398",
             "telephone": "(1) 847-299-6500",

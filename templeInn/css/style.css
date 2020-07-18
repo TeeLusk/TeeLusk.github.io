@@ -62,7 +62,7 @@ nav > ul > li > a {
     margin: auto;
     padding: 0 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -83,7 +83,7 @@ button {
     padding: 1em;
     border: none;
     border-radius: 5px;
-    margin: auto;    
+    margin: 5px auto;    
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -185,6 +185,10 @@ nav ul li a:hover {
 
 /* ------------------------------- */
 /* TEMPLES PAGE STYLING */
+/* #templesPage {
+    word-wrap: break-word;
+} */
+
 #templesPage .row .flexSection {
     display: flex;
     flex-direction: row;
@@ -231,6 +235,10 @@ nav ul li a:hover {
 
 form {
     margin: auto;
+    max-width: 500px;
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 1em;
 }
 
 .form-item p {
@@ -294,4 +302,8 @@ textarea {
 
 
 /* LARGE */
-
+@media (min-width: 975px) {
+    .width-wrapper {
+        flex-direction: row;
+    }
+}
