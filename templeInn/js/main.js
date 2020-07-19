@@ -10,10 +10,9 @@ hambutton.addEventListener('click', () => {
 //-----------------------------------------
 //SCROLL TO TOP
 function topFunction() {
+    document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-};
-
-
+}
 
 // ----------------------------------------
 // TEMPLES
@@ -57,8 +56,8 @@ if (document.getElementById('templesPage')) {
                 milestones.innerHTML = '<h3>Milestones</h3>';
                 services.innerHTML = '<h3>Services</h3>';
 
-                button.setAttribute("onclick", 'topFunction()');
-                button.innerText = 'Go to top';
+                button.setAttribute("onclick", "topFunction()");
+                button.innerText = 'Back to top';
 
                 img.src = element.photo;
                 img.setAttribute('alt', `${element.name} Temple`);
@@ -125,7 +124,7 @@ if (document.getElementById('templesPage')) {
                 div.appendChild(notice);
                 div.appendChild(link);
                 div.appendChild(button);
-                
+
                 document.getElementById('templesPage').appendChild(div);
             });
 
