@@ -36,7 +36,7 @@ if (document.getElementById('templesPage')) {
                 div.className = "row";
                 div.id = `${element.id}`;
                 let flexSection = document.createElement('div');
-                flexSection.className = 'flexSection';
+                flexSection.className = 'width-wrapper';
                 let textSection = document.createElement('div');
                 textSection.className = 'textSection';
                 let img = document.createElement('img');
@@ -98,11 +98,6 @@ if (document.getElementById('templesPage')) {
 
                         let currentCondition = weatherCurrent.weather[0].main;
                         let currentTemp = weatherCurrent.main.temp;
-                        let currentHumidity = weatherCurrent.main.humidity;
-                        let currentWindSpeed = weatherCurrent.wind.speed;
-                        let windChill = Math.floor(35.74 + 0.6215 * currentTemp - 35.75 * Math.pow(currentWindSpeed, 0.16) + 0.4275 *
-                            currentTemp * Math.pow(currentWindSpeed, 0.16));
-                        windChill = (windChill > currentTemp) ? currentTemp : windChill;
 
                         weather.innerHTML = '<h3>Current Weather Conditions</h3><p>' + currentCondition + ', ' + currentTemp + '&deg; F</p>';
 
