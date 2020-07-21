@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Blaine Robertson">
+  <title>Progressive Image Loading Activity</title>
+  <style>
+   img[data-src] {
+    filter: blur(0.2em);
+  }
+
+  img {
+    max-width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Progressive Image Loading</h1>
+  </header>
+  <main>
+
+    <figure>
+     <picture>
+      <img alt="Small Clear Weather Image" src="placeholder-mobile.png" data-src="clear-mobile.jpg">
+       </picture>
+      <figcaption>Clear Small</figcaption>
+    </figure>
+
+  </main>
+  <script>
+   let imagesToLoad = document.querySelectorAll("img[data-src]");
+
+const imgOptions = {
+ threshold: 0,
+ rootMargin: "0px 0px 100px 0px"
+}
+const loadImages = (image) => {
+ image.setAttribute('src', image.getAttribute("data-src"));
+ image.onload = () => {
+  image.removeAttribute('data-src');
+ };
+};
+
+if ("IntersectionObserver" in window) {
+ const observer = new IntersectionObserver((items, observer) => {
+  items.forEach((item) => {
+   if (item.isIntersecting) {
+    loadImages(item.target);
+    observer.unobserve(item.target);
+   }
+  });
+ }, imgOptions);
+
+ imagesToLoad.forEach((img)=> {
+  observer.observe(img);
+ });
+} else {
+ imagesToLoad.forEach((img) => {
+  loadImages(img);
+ });
+}
+</script>
+</body>
+
+</html>

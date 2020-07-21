@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>AG Reports</title>
+</head>
+
+<body>
+    <h1>Reports</h1>
+
+    <div class="buttons">
+        <!-- BUTTONS AT TOP, WHEN PRESSED REPORTS ARE LOADED -->
+        <button type="button" data-id="us679" class="btn btn-primary" id="ifButton">Idaho Falls US679</button>
+        <button type="button" data-id="us643" class="btn btn-primary" id="rexButton">Rexburg US643</button>
+        <button type="button" data-id="us738" class="btn btn-primary" id="logButton">Logan US738</button>
+        <button type="button" data-id="us615" class="btn btn-primary" id="lehiButton">Lehi US615</button>
+        <button type="button" data-id="us532" class="btn btn-primary" id="oremButton">Orem US532</button>
+        <button type="button" data-id="us796" class="btn btn-primary" id="boiseButton">Boise US796</button>
+        <button type="button" data-id="us691" class="btn btn-primary" id="jacksButton">Jackson US691</button>
+
+        <!-- TODO TOGGLE TO INCLUDE BLOG REPORTS OR NOT -->
+    </div>
+
+    <!-- <iframe width="600" height="700"
+        src="https://datastudio.google.com/embed/reporting/3281da8c-aa74-48d7-b77d-18614de7dbf2/page/tWDGB"
+        frameborder="0" style="border:0" allowfullscreen></iframe> -->
+
+    <div id="reports"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <script>
+        //CENTERS
+        // TODO Embed Report URL for each center/blog
+        const centers = [
+            {
+                "name": "Idaho Falls",
+                "code": "us679",
+                "mainReport": "",
+                "blogReport": ""
+            },
+            {
+                "name": "Rexburg",
+                "code": "us648",
+                "mainReport": "",
+                "blogReport": ""
+            },
+            {
+                "name": "",
+                "code": "",
+                "mainReport": "",
+                "blogReport": ""
+            },
+            {
+                "name": "",
+                "code": "",
+                "mainReport": "",
+                "blogReport": ""
+            },
+            {
+                "name": "",
+                "code": "",
+                "mainReport": "",
+                "blogReport": ""
+            },
+            {
+                "name": "",
+                "code": "",
+                "mainReport": "",
+                "blogReport": ""
+            },
+            {
+                "name": "",
+                "code": "",
+                "mainReport": "",
+                "blogReport": ""
+            }
+        ];
+
+        //EVENT LISTENERS
+        let buttons = document.querySelectorAll('button');
+        buttons.forEach(element => {
+            element.addEventListener("click", function () {
+                console.log(element.dataset.id);
+            })
+        });
+
+        function createiFrame(src) {
+            iframe = document.createElement('iframe');
+            iframe.setAttribute("height", "600px");
+            iframe.setAttribute("width", "950px");
+            iframe.setAttribute("src", src);
+            iframe.setAttribute("")
+            iframe.setAttribute("allowFullscreen", "");
+
+        }
+
+        const reportsDiv = document.querySelector('#reports')
+
+        function showReports(centerCode) {
+            reportsDiv.innerHTML = ""; //Clears previous selection
+            //If to search for centerCode
+            //For each element in centers array
+            //if (centerCode == element.code)
+
+            //Create iframe for main center
+            //createiframe(element.mainReport)
+
+            //create iframe for blog
+            //createiFrame(element.blogReport)
+
+            //append to reports
+        }
+    </script>
+</body>
+
+</html>
