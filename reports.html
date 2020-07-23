@@ -10,10 +10,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>AG Reports</title>
+    <style>
+        body {
+            margin: auto;
+            text-align: center;
+        }
+
+        .btn-primary {
+            margin: 5px;
+        } 
+
+    </style>
 </head>
 
 <body>
-    <h1>Reports</h1>
+    <h1>AlphaGraphics Analytics</h1>
 
     <div class="buttons">
         <!-- BUTTONS AT TOP, WHEN PRESSED REPORTS ARE LOADED -->
@@ -25,7 +36,11 @@
         <button type="button" data-id="us796" class="btn btn-primary" id="boiseButton">Boise US796</button>
         <button type="button" data-id="us691" class="btn btn-primary" id="jacksButton">Jackson US691</button>
 
-        <!-- TODO TOGGLE TO INCLUDE BLOG REPORTS OR NOT -->
+        <p>Include Blog Report?</p>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <button type="button" class="btn btn-success" id="blogYes" data-clicked="false">Yes</button>
+            <button type="button" class="btn btn-danger" id="blogNo" data-clicked="true" checked>No</button>
+        </div>
     </div>
 
     <!-- <iframe width="600" height="700"
@@ -45,89 +60,116 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-
+    <!-- iFRAME LOGIC -->
     <script>
         //CENTERS
-        // TODO Embed Report URL for each center/blog
-        const centers = [
-            {
+        const centers = [{
                 "name": "Idaho Falls",
                 "code": "us679",
-                "mainReport": "",
-                "blogReport": ""
+                "mainReport": "https://datastudio.google.com/embed/reporting/ad7f7681-baa6-4ada-83f5-5406c73f6723/page/tWDGB",
+                "blogReport": "https://datastudio.google.com/embed/reporting/c152e9b4-c1bd-44db-bbed-ad9520c951fc/page/tWDGB"
             },
             {
                 "name": "Rexburg",
-                "code": "us648",
-                "mainReport": "",
-                "blogReport": ""
+                "code": "us643",
+                "mainReport": "https://datastudio.google.com/embed/reporting/3a9cf407-69af-4455-80aa-63f8e248f037/page/tWDGB",
+                "blogReport": "https://datastudio.google.com/embed/reporting/7c47672b-80b2-486f-b3b5-c5482798f3d4/page/tWDGB"
             },
             {
-                "name": "",
-                "code": "",
-                "mainReport": "",
-                "blogReport": ""
+                "name": "Boise",
+                "code": "us796",
+                "mainReport": "https://datastudio.google.com/embed/reporting/13cccd4d-34be-4301-82ec-56690e72cd47/page/tWDGB",
+                "blogReport": "https://datastudio.google.com/embed/reporting/464eba8d-aa89-49c3-a61c-b72e6f1ce7c2/page/tWDGB"
             },
             {
-                "name": "",
-                "code": "",
-                "mainReport": "",
-                "blogReport": ""
+                "name": "Jackson",
+                "code": "us691",
+                "mainReport": "https://datastudio.google.com/embed/reporting/c2edd315-1cd6-4e2c-a732-76181bb69dc9/page/tWDGB",
+                "blogReport": "https://datastudio.google.com/embed/reporting/19d46424-7044-4aea-9a41-3ce483e30ce7/page/tWDGB"
             },
             {
-                "name": "",
-                "code": "",
-                "mainReport": "",
-                "blogReport": ""
+                "name": "Orem",
+                "code": "us532",
+                "mainReport": "https://datastudio.google.com/embed/reporting/68360dfb-0837-45e3-b9db-9bcb35a2ce66/page/tWDGB",
+                "blogReport": "https://datastudio.google.com/embed/reporting/9763c7ba-db1d-4b19-b8c0-5d7dbeb7f793/page/tWDGB"
             },
             {
-                "name": "",
-                "code": "",
-                "mainReport": "",
-                "blogReport": ""
+                "name": "Lehi",
+                "code": "us615",
+                "mainReport": "https://datastudio.google.com/embed/reporting/dd0afec9-f47d-438d-91ef-34c7093b450f/page/tWDGB",
+                "blogReport": "https://datastudio.google.com/embed/reporting/f7c12b94-3ca6-45dc-b781-27335a62e6ea/page/tWDGB"
             },
             {
-                "name": "",
-                "code": "",
-                "mainReport": "",
-                "blogReport": ""
+                "name": "Logan",
+                "code": "us738",
+                "mainReport": "https://datastudio.google.com/embed/reporting/68f51ead-50ce-4139-9444-56a98fee764b/page/tWDGB",
+                "blogReport": "https://datastudio.google.com/embed/reporting/d2e5336a-ebba-479c-9437-fc61365b9d1d/page/tWDGB"
             }
         ];
 
-        //EVENT LISTENERS
-        let buttons = document.querySelectorAll('button');
-        buttons.forEach(element => {
-            element.addEventListener("click", function () {
-                console.log(element.dataset.id);
-            })
+        // BLOG LOGIC
+        let yesButton = document.querySelector('#blogYes');
+        let noButton = document.querySelector('#blogNo');
+
+        yesButton.addEventListener("click", function () {
+            yesButton.dataset.clicked = true;
+            noButton.dataset.clicked = false;
         });
 
-        function createiFrame(src) {
-            iframe = document.createElement('iframe');
-            iframe.setAttribute("height", "600px");
-            iframe.setAttribute("width", "950px");
-            iframe.setAttribute("src", src);
-            iframe.setAttribute("")
-            iframe.setAttribute("allowFullscreen", "");
+        noButton.addEventListener("click", function () {
+            yesButton.dataset.clicked = false;
+            noButton.dataset.clicked = true;
+        });
 
-        }
 
-        const reportsDiv = document.querySelector('#reports')
 
+        // APPEND IFRAME
         function showReports(centerCode) {
+            const reportsDiv = document.querySelector('#reports');
             reportsDiv.innerHTML = ""; //Clears previous selection
+
             //If to search for centerCode
             //For each element in centers array
             //if (centerCode == element.code)
+            centers.forEach(element => {
+                if (element.code === centerCode) {
+                    mainHeader = document.createElement('h2');
+                    mainHeader.textContent = `${element.name} Center Site`
+                    iframe = document.createElement('iframe');
+                    iframe.setAttribute("height", "600px");
+                    iframe.setAttribute("width", "950px");
+                    iframe.setAttribute("frameborder", "0");
+                    iframe.setAttribute("src", element.mainReport);
+                    iframe.setAttribute("allowFullscreen", "");
+                    reportsDiv.appendChild(mainHeader);
+                    reportsDiv.appendChild(iframe);
 
-            //Create iframe for main center
-            //createiframe(element.mainReport)
+                    //BLOG
+                    if (yesButton.dataset.clicked == "true") {
+                        blogHeader = document.createElement('h2');
+                        blogHeader.textContent = `${element.name} Blog`
+                        iframe2 = document.createElement('iframe');
+                        iframe2.setAttribute("height", "600px");
+                        iframe2.setAttribute("width", "950px");
+                        iframe2.setAttribute("frameborder", "0");
+                        iframe2.setAttribute("src", element.blogReport);
+                        iframe2.setAttribute("allowFullscreen", "");
+                        reportsDiv.appendChild(blogHeader);
+                        reportsDiv.appendChild(iframe2);
+                    }
 
-            //create iframe for blog
-            //createiFrame(element.blogReport)
 
-            //append to reports
+                }
+            });
         }
+
+        //EVENT LISTENERS
+        let buttons = document.querySelectorAll('.btn-primary');
+        buttons.forEach(element => {
+            element.addEventListener("click", function () {
+                showReports(element.dataset.id);
+            });
+        });
     </script>
 </body>
 
