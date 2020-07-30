@@ -30,39 +30,60 @@ centersList.forEach(element => {
     });
 });
 
+// console.log(centerProductLinks);
+
+
+
+// async getAllCenters(centers).then(getAllCenterProducts(centers));
+
 // ------------------------------------------------------------
-// GET ALL PRODUCT LINKS
+// TODO GET ALL PRODUCT LINKS
 
 // NUMBER OF PRODUCTS ON PAGE
 // document.querySelector('#content-body-center > div > section > div > div.listing.listing-one > section > div > div.product-list-items-wrap').children.length
 
 // SELECTOR FOR EACH PRODUCT
 // document.querySelector('#content-body-center > div > section > div > div.listing.listing-one > section > div > div.product-list-items-wrap > div:nth-child(INDEX) > section > a');
-let allLinks = [];
-async function getProductLinks(centerProductLinks) {
-    const browser = await puppeteer.launch();
+
+
+let finalLinks = [];
+
+// async function getProductLinks(links, page) {
+//     try {
+//         centerProductLinks.forEach(element => {
+//             try {
+//                 page.goto(element);
+//                 let productLength = document.querySelector('#content-body-center > div > section > div > div.listing.listing-one > section > div > div.product-list-items-wrap').children.length;
+//                 console.log(element, productLength);
+
+//             } catch (error) {
+//                 console.log(`Error: ${element} not a valid page`);
+//             }
+//         });
+//     } catch (error) {
+//         console.log('Error in loop')
+//     }
+// };
+
+
+async function getProductLinks() {
+    const browser = await puppeteer.launch({headless:false});
     let page = await browser.newPage();
-    try {
-        centerProductLinks.forEach(element => {
-            try {
-                page.goto(element);
-                let productLength = document.querySelector('#content-body-center > div > section > div > div.listing.listing-one > section > div > div.product-list-items-wrap').children.length;
-                console.log(element, productLength);
+    console.log(centerProductLinks);
+    centerProductLinks.forEach(element => {
+        (async () => {
+        await page.goto(element);
+        returnValue = await page.$eval('#content-body-center > div > section > div > div.listing.listing-one > section > div > div.product-list-items-wrap').children.length;
+        console.log(returnValue);
+        }) 
+        ();
+    })
+}
 
-            } catch (error) {
-                console.log(`Error: ${element} not a valid page`);
-            }
-        });
-    } catch (error) {
-        console.log('Error in loop')
-    }
-};
-
-
+getProductLinks();
 
 // -------------------------------------------------
 // OUTPUT RESULTS
-//https://stackabuse.com/reading-and-writing-json-files-with-node-js/
 async function outputToFile(results) {
     fs.writeFile('results.txt', results, (err) => {
         // throws an error, you could also catch it here
@@ -73,6 +94,12 @@ async function outputToFile(results) {
     });
 }
 
-getProductLinks(centerProductLinks);
+(async () => {
+const browser = await puppeteer.launch();
+let page = await browser.newPage();
+getProductLinks(centerProductLinks, page);
+browser.close();
+})
+// ();
 
 //Export allinks to json
