@@ -67,7 +67,7 @@ let finalLinks = [];
 
 
 async function getProductLinks() {
-    const browser = await puppeteer.launch({headless:false});
+    const browser = await puppeteer.launch();
     let page = await browser.newPage();
     console.log(centerProductLinks);
     centerProductLinks.forEach(element => {
