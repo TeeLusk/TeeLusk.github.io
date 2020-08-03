@@ -75,6 +75,7 @@ async function getProductLinks() {
         await page.goto(element);
         returnValue = await page.$eval('#content-body-center > div > section > div > div.listing.listing-one > section > div > div.product-list-items-wrap').children.length;
         console.log(returnValue);
+        return returnValue;
         }) 
         ();
     })

@@ -29,6 +29,7 @@ async function checkForRAQ(url) {
         await page.waitForSelector(formSelector, { timeout: 5000 })
         // console.log('Form Found');
         resultSet.push(url);
+        return resultSet;
       } catch (error) {
         console.log("The element didn't appear.");
         oppositeSet.push(url);
