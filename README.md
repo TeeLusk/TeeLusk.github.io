@@ -1,3 +1,3 @@
 # TeeLusk.github.io 
-Various Snippets
+Tyler Lusk Github Portfolio
 
