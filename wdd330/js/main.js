@@ -1,10 +1,12 @@
 const links = [{
     label: "Week 1",
     url: "./W01/w01.md"
+    // Where URL is being plugged into HTML file, path needs to be relative to where 
+    // the HTML file is, NOT the js
 },
 // {
 //     label: "Week 2",
-//     url: "../W01/w01.md"
+//     url: "./W02/w02.md"
 // },
 ]
 
