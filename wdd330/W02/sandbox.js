@@ -120,7 +120,6 @@ let arrayValue = [1, 2, 3, 4, 5];
 // Maybe this is personal preference but from what I understand it might be more 
 //readable/obvious what's going on to assign the new array value to a new variable, 
 //rather than replace the same arrayValue. Less ambiguous 
-
 newArrayValue = reverseArray(arrayValue);
 console.log(newArrayValue);
 // → [5, 4, 3, 2, 1]
