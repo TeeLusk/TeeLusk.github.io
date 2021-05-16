@@ -12,6 +12,10 @@ const links = [{
     label: "Week 3",
     url: "./W03/W03Notes.md"
 },
+{
+    label: "Week 4",
+    url: "./W04/W04Notes.md"
+},
 ]
 
 const list = document.querySelector("ul");

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Project - Tic Tac Toe Game</title>
+    <style>
+        /* Mobile First Design */
+
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cell-size: 80px;
+            --mark-size: calc(var(--cell-size) * 0.9);
+            --background-color: rgb(22, 9, 44);
+            --gamePiece-color: rgba(50, 19, 100);
+            --gamePiece-color-light: rgba(50, 19, 100, 0.5);
+            --border: 1px solid black;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px auto 15px auto;
+            font-size: 18px;
+        }
+
+        /* center and style the reset button */
+        #reset {
+            display: block;
+            padding: 7px;
+            font-size: 18px;
+            border-radius: 7%;
+            background-color: var(--background-color);
+            color: white;
+            transition: 0.2s ease-in;
+            margin: auto;
+        }
+
+        #reset:hover {
+            box-shadow: 5px 5px 5px black;
+            transform: scale(1.1);
+        }
+
+        /* center the game board to the viewport */
+        .board {
+            width: 100vw;
+            height: 80vh;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+        }
+
+        /* set cell size and remove outer boarders to create board  */
+        .cell {
+            width: var(--cell-size);
+            height: var(--cell-size);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cell:nth-child(3n + 2) {
+            border-left: var(--border);
+            border-right: var(--border);
+        }
+
+        .cell:nth-child(4),
+        .cell:nth-child(5),
+        .cell:nth-child(6) {
+            border-top: var(--border);
+            border-bottom: var(--border);
+        }
+
+        /* If a cell has a character change cursor to not allowed */
+        .cell.x,
+        .cell.circle {
+            cursor: not-allowed;
+        }
+
+        /* set the character color once the cell has been selected */
+        .cell.x::before,
+        .cell.x::after,
+        .cell.circle::before {
+            background-color: var(--gamePiece-color);
+        }
+
+        /* set the character color when player hovers over cell */
+        .board.x .cell:not(.x):not(.circle):hover::before,
+        .board.x .cell:not(.x):not(.circle):hover::after,
+        .board.circle .cell:not(.x):not(.circle):hover::before {
+            background-color: var(--gamePiece-color-light);
+        }
+
+        /* if cell is empty on hover cell shows x */
+        .cell.x::before,
+        .cell.x::after,
+        .board.x .cell:not(.x):not(.circle):hover::before,
+        .board.x .cell:not(.x):not(.circle):hover::after {
+            content: '';
+            position: absolute;
+            width: calc(var(--mark-size) * 0.1);
+            height: var(--mark-size);
+        }
+
+        .cell.x::before,
+        .board.x .cell:not(.x):not(.circle):hover::before {
+            transform: rotate(45deg);
+        }
+
+        .cell.x::after,
+        .board.x .cell:not(.x):not(.circle):hover::after {
+            transform: rotate(-45deg);
+        }
+
+        /* if cell is empty on hover cell shows o */
+        .cell.circle::before,
+        .cell.circle::after,
+        .board.circle .cell:not(.x):not(.circle):hover::before,
+        .board.circle .cell:not(.x):not(.circle):hover::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .cell.circle::before,
+        .board.circle .cell:not(.x):not(.circle):hover::before {
+            width: var(--mark-size);
+            height: var(--mark-size);
+        }
+
+        .cell.circle::after,
+        .board.circle .cell:not(.x):not(.circle):hover::after {
+            width: calc(var(--mark-size) * 0.7);
+            height: calc(var(--mark-size) * 0.7);
+            background-color: white;
+        }
+
+        .winning-message {
+            /* message shows only if there is a win or draw */
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 40;
+            background-color: var(--background-color);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 5rem;
+        }
+
+
+        .winning-message button {
+            font-size: 2rem;
+            background-color: white;
+            border: 1px double var(--background-color);
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .winning-message button:hover {
+            background-color: darkgray;
+            color: white;
+        }
+
+        .winning-message.show {
+            display: flex;
+        }
+
+        @media screen and (min-width: 460px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            :root {
+                --cell-size: 100px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            :root {
+                --cell-size: 120px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            .board {
+                margin-top: -30px;
+                height: 94vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Two (2) Player Tic Tac Toe Game</h1>
+    <button class="submit" id="reset">Reset Game</button>
+    <div class="board" id="board">
+        <!-- using data-test instead of creating table -->
+        <div class="cell" cell-test></div>
+        <div class="cell" cell-test></div>
+        <div class="cell" cell-test></div>
+        <div class="cell" cell-test></div>
+        <div class="cell" cell-test></div>
+        <div class="cell" cell-test></div>
+        <div class="cell" cell-test></div>
+        <div class="cell" cell-test></div>
+        <div class="cell" cell-test></div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div class="winning-text" id="winningText"></div>
+        <button id="restartGame">Restart Game</button>
+    </div>
+    <script>
+        //  ------ retrieve HTML elements ---------
+        const board = document.getElementById('board');
+        const cellElements = document.querySelectorAll('[cell-test]');
+        const resetGame = document.getElementById('reset');
+        const restartGame = document.getElementById('restartGame');
+        const winningMessageTextElement = document.getElementById('winningText');
+        const winningMessageElement = document.getElementById('winningMessage');
+
+        //  ------- Build the game variables------
+        const playerX = 'x';
+        const playerO = 'circle';
+        let circleTurn;
+
+        // create an array's within an array to hold all the combinations that win
+        const combinationsToWin = [
+            // horizontal combinations
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            // vertical combinations
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            // diagonal combinations
+            [0, 4, 8],
+            [2, 4, 6],
+        ];
+        //  ------------ Event Listeners -----------------
+        // clear the board when Reset Game button is clicked
+        resetGame.addEventListener('click', startGame);
+        // clear the board when Start Game button is clicked
+        restartGame.addEventListener('click', startGame);
+
+        // use touchend with event listener for touch screen and mouse --- 
+        cellElements.forEach((cell) => {
+            cell.addEventListener('touchend', handleClickorTap, {
+                once: true
+            });
+            cell.addEventListener('click', handleClickorTap, {
+                once: true
+            });
+        });
+
+        // -- Functions are hoisted may be placed after the call back ----
+        // call the start game function
+        startGame();
+
+        function startGame() {
+            circleTurn = false;
+            cellElements.forEach((cell) => {
+                cell.classList.remove(playerX);
+                cell.classList.remove(playerO);
+                cell.removeEventListener('click', handleClickorTap);
+                cell.addEventListener('click', handleClickorTap, {
+                    once: true
+                });
+                // callback the setBoardHoverClass function
+                setBoardHoverClass();
+                winningMessageElement.classList.remove('show');
+            });
+        }
+        // e = event this function looks at grid cell and places either an x or o based upon the current turn
+        function handleClickorTap(e) {
+            const cell = e.target;
+            // establish the currentClass as either an x or 0
+            const currentClass = circleTurn ? playerO : playerX;
+            // calls placeMark function
+            placeMark(cell, currentClass);
+            // continue to check if a x or o has won
+            if (checkWin(currentClass)) {
+                // if there is a winner call the endGame Function
+                endGame(false);
+            } else if (isDraw()) {
+                endGame(true);
+            } else {
+                // call the swapTurns function to swap between x and o
+                swapTurns();
+                // call the hover class function after the swapTurns to show x or o based on current characters turn
+                setBoardHoverClass();
+                // due to touch need to prevent browsers default behavior
+                e.preventDefault();
+                return false;
+            }
+        }
+        // ----------- function to print screen message if game is draw
+        function endGame(draw) {
+            if (draw) {
+                winningMessageTextElement.innerText = 'Draw!';
+            } else {
+                // ternary operator to check if o or x won
+                winningMessageTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`;
+            }
+            winningMessageElement.classList.add('show');
+        }
+        // --- using a spread operator ... to look through cellElements array and count (every) cell to determin if game is a draw --- //
+        function isDraw() {
+            return [...cellElements].every((cell) => {
+                return cell.classList.contains(playerX) || cell.classList.contains(playerO);
+            });
+        }
+        //  function to look at grid cell and place current character
+        function placeMark(cell, currentClass) {
+            cell.classList.add(currentClass);
+        }
+
+        //create the swap turns function -  - simple function toggles between circle and x
+
+        function swapTurns() {
+            circleTurn = !circleTurn;
+        }
+
+        // create the hover state for the board callback in start game
+        function setBoardHoverClass() {
+            board.classList.remove(playerX);
+            board.classList.remove(playerO);
+            if (circleTurn) {
+                board.classList.add(playerO);
+            } else {
+                board.classList.add(playerX);
+            }
+        }
+
+        function checkWin(currentClass) {
+            /// check if winning combination
+            return combinationsToWin.some((combination) => {
+                return combination.every((index) => {
+                    // check that every element has either an x or o
+                    // check each cell and its class
+                    return cellElements[index].classList.contains(currentClass);
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40%;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .wrapper {
+            margin: auto;
+            width: 150px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .row {
+            border-bottom: 2px solid black;
+        }
+
+        .row:last-child {
+            border-bottom: none;
+        }
+
+        .cell {
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+            font-size: xx-large;
+        }
+
+        .cell:nth-child(1) {
+            border-right: 2px solid black;
+        }
+
+        .cell:nth-child(2) {
+            border-right: 2px solid black;
+        }
+
+
+    </style>
+    <!-- --------------------------------------------------------------------------------- -->
+    <main>
+        <div class="wrapper">
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const allCell = document.querySelectorAll('.cell');
+
+        function cellSelected() {
+            // e.preventDefault();
+            this.innerHTML= `<p>Inserted</p>`;
+        }
+
+        allCell.forEach(e => {
+            cell.addEventListener('touchend', cellSelected, { once:true});
+            cell.addEventListener('click', cellSelected, { once:true});
+        });
+    </script>
+</body>
+
+</html>
