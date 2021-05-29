@@ -2,6 +2,7 @@
 
 ## Agro API
 [Main Page](../AgroAPI/index.html)
+[API Docs: Satellite Imagery](https://agromonitoring.com/api/images)
 
 ### Limits/Constraints
 Calls 1min: 60
@@ -20,6 +21,9 @@ http://api.agromonitoring.com/agro/1.0/image/search?start={start date}&end={end 
 * [ ] Dashboard
     * [ ] Decide what information needs to be in
     * [ ] Views
+    * [ ] Select Imagery Type
+    * [ ] Select Date Range
+        * Convert into Unix
 * [ ] Refresh?
 * [ ] Local Storage?
 
