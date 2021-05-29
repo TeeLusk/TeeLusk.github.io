@@ -7,7 +7,7 @@ let endTime = '1508976000';
 // Build URL for Fetch
 // http://api.agromonitoring.com/agro/1.0/image/search?start={start date}&end={end date}&polyid={ID of polygon}&appid={API key}
 function buildAgroURL (api, polygonId, start, end) {
-    let url = `http://api.agromonitoring.com/agro/1.0/image/search?start=${start}&end=${end}&polyid=${polygonId}&appid=${api}`;
+    let url = `https://api.agromonitoring.com/agro/1.0/image/search?start=${start}&end=${end}&polyid=${polygonId}&appid=${api}`;
     return url;
 };
 
