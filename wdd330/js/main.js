@@ -28,6 +28,34 @@ const links = [{
     label: "Week 7",
     url: "./W07/W07Notes.md"
 },
+{
+    label: "Week 8",
+    url: "./W08/W08Notes.md"
+},
+{
+    label: "Week 9",
+    url: "./W09/W09Notes.md"
+},
+{
+    label: "Week 10",
+    url: "./W010/W010Notes.md"
+},
+{
+    label: "Week 11",
+    url: "./W011/W011Notes.md"
+},
+{
+    label: "Week 12",
+    url: "./W012/W012Notes.md"
+},
+{
+    label: "Week 13",
+    url: "./W013/W013Notes.md"
+},
+{
+    label: "Week 14",
+    url: "./W014/W014Notes.md"
+},
 ]
 
 const list = document.querySelector("ul");
