@@ -38,23 +38,23 @@ const links = [{
 },
 {
     label: "Week 10",
-    url: "./W010/W010Notes.md"
+    url: "./W10/W10Notes.md"
 },
 {
     label: "Week 11",
-    url: "./W011/W011Notes.md"
+    url: "./W11/W11Notes.md"
 },
 {
     label: "Week 12",
-    url: "./W012/W012Notes.md"
+    url: "./W12/W12Notes.md"
 },
 {
     label: "Week 13",
-    url: "./W013/W013Notes.md"
+    url: "./W13/W13Notes.md"
 },
 {
     label: "Week 14",
-    url: "./W014/W014Notes.md"
+    url: "./W14/W14Notes.md"
 },
 ]
 
