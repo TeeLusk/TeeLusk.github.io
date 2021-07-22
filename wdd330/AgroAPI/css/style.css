@@ -2,7 +2,10 @@
   --main-blue: #2196f3;
 }
 
-
+body {
+    padding: 0;
+    margin: 0;
+}
 
 #images {
   display: flex;
@@ -31,8 +34,14 @@ main div {
     margin: auto;
 }
 
+#date {
+    margin: auto;
+    text-align: center;
+}
+
 #mapSectionSelectors {
     display: flex;
+    align-items: center;
 }
 
 /* Leaflet.js */

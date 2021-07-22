@@ -14,19 +14,15 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
-
+        
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-
+        <h1>Agro Dashboard</h1>
     </header>
-    <nav>
-        <h1>Agro Dashboard - Mobile</h1>
-    </nav>
     <main>
-        
 
         <div id="mapSectionSelectors">
             <div>
@@ -35,7 +31,8 @@
                 </select>
             </div>
             <div>
-                <label for="imageTypeSelector">Select Image Type</label><select id="imageTypeSelector">
+                <label for="imageTypeSelector">Select Image Type</label>
+                <select id="imageTypeSelector">
                     <option value="truecolor">True Color</option>
                     <option value="falsecolor">False Color</option>
                     <option value="ndvi">NDVI</option>
@@ -48,10 +45,6 @@
             </div>
         </div>
         <div id="mapid"></div>
-        
-        <div id="dates">
-            <input type="date" id="datePicker">
-        </div>
 
     </main>
 
