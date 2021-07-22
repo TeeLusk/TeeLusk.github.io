@@ -1,362 +1,353 @@
-[
-    {
-        "dt": 1501286400,
-        "type": "Landsat 8",
-        "dc": 100,
-        "cl": 0.28,
-        "sun": {
-            "elevation": 60.633,
-            "azimuth": 135.747
-        },
-        "image": {
-            "truecolor": "http://api.agromonitoring.com/image/1.0/000597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/image/1.0/010597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/image/1.0/020597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/image/1.0/030597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/image/1.0/040597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/image/1.0/050597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/image/1.0/060597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/image/1.0/070597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "tile": {
-            "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/000597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/010597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/020597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/030597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/040597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/050597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/060597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/070597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "stats": {
-            "ndvi": "http://api.agromonitoring.com/stats/1.0/023597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/stats/1.0/033597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/stats/1.0/043597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/stats/1.0/053597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/stats/1.0/063597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/stats/1.0/073597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "data": {
-            "truecolor": "http://api.agromonitoring.com/data/1.0/001597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/data/1.0/011597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/data/1.0/022597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/data/1.0/032597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/data/1.0/042597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/data/1.0/052597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/data/1.0/062597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/data/1.0/072597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        }
+[{
+    "dt": 1501286400,
+    "type": "Landsat 8",
+    "dc": 100,
+    "cl": 0.28,
+    "sun": {
+        "elevation": 60.633,
+        "azimuth": 135.747
     },
-    {
-        "dt": 1502668800,
-        "type": "Landsat 8",
-        "dc": 100,
-        "cl": 100,
-        "sun": {
-            "elevation": 56.12542059,
-            "azimuth": 142.89056058
-        },
-        "image": {
-            "truecolor": "http://api.agromonitoring.com/image/1.0/0005990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/image/1.0/0105990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/image/1.0/0205990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/image/1.0/0305990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/image/1.0/0405990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/image/1.0/0505990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/image/1.0/0605990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/image/1.0/0705990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "tile": {
-            "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0005990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0105990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0205990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0305990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0405990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0505990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0605990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0705990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "stats": {
-            "ndvi": "http://api.agromonitoring.com/stats/1.0/0235990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/stats/1.0/0335990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/stats/1.0/0435990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/stats/1.0/0535990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/stats/1.0/0635990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/stats/1.0/0735990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "data": {
-            "truecolor": "http://api.agromonitoring.com/data/1.0/0015990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/data/1.0/0115990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/data/1.0/0225990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/data/1.0/0325990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/data/1.0/0425990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/data/1.0/0525990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/data/1.0/0625990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/data/1.0/0725990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        }
+    "image": {
+        "truecolor": "http://api.agromonitoring.com/image/1.0/000597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/image/1.0/010597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/image/1.0/020597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/image/1.0/030597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/image/1.0/040597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/image/1.0/050597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/image/1.0/060597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/image/1.0/070597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
     },
-    {
-        "dt": 1504051200,
-        "type": "Landsat 8",
-        "dc": 100,
-        "cl": 100,
-        "sun": {
-            "elevation": 51.65457217,
-            "azimuth": 148.31167731
-        },
-        "image": {
-            "truecolor": "http://api.agromonitoring.com/image/1.0/00059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/image/1.0/01059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/image/1.0/02059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/image/1.0/03059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/image/1.0/04059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/image/1.0/05059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/image/1.0/06059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/image/1.0/07059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "tile": {
-            "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/00059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/01059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/02059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/03059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/04059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/05059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/06059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/07059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "stats": {
-            "ndvi": "http://api.agromonitoring.com/stats/1.0/02359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/stats/1.0/03359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/stats/1.0/04359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/stats/1.0/05359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/stats/1.0/06359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/stats/1.0/07359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "data": {
-            "truecolor": "http://api.agromonitoring.com/data/1.0/00159a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/data/1.0/01159a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/data/1.0/02259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/data/1.0/03259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/data/1.0/04259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/data/1.0/05259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/data/1.0/06259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/data/1.0/07259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        }
+    "tile": {
+        "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/000597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/010597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/020597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/030597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/040597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/050597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/060597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/070597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
     },
-    {
-        "dt": 1505433600,
-        "type": "Landsat 8",
-        "dc": 100,
-        "cl": 100,
-        "sun": {
-            "elevation": 46.54283143,
-            "azimuth": 153.52627964
-        },
-        "image": {
-            "truecolor": "http://api.agromonitoring.com/image/1.0/00059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/image/1.0/01059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/image/1.0/02059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/image/1.0/03059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/image/1.0/04059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/image/1.0/05059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/image/1.0/06059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/image/1.0/07059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "tile": {
-            "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/00059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/01059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/02059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/03059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/04059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/05059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/06059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/07059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "stats": {
-            "ndvi": "http://api.agromonitoring.com/stats/1.0/02359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/stats/1.0/03359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/stats/1.0/04359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/stats/1.0/05359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/stats/1.0/06359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/stats/1.0/07359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "data": {
-            "truecolor": "http://api.agromonitoring.com/data/1.0/00159bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/data/1.0/01159bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/data/1.0/02259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/data/1.0/03259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/data/1.0/04259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/data/1.0/05259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/data/1.0/06259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/data/1.0/07259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        }
+    "stats": {
+        "ndvi": "http://api.agromonitoring.com/stats/1.0/023597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/stats/1.0/033597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/stats/1.0/043597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/stats/1.0/053597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/stats/1.0/063597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/stats/1.0/073597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
     },
-    {
-        "dt": 1506556800,
-        "type": "Sentinel-2",
-        "dc": 100,
-        "cl": 0.23,
-        "sun": {
-            "elevation": 44.373,
-            "azimuth": 162.787
-        },
-        "image": {
-            "truecolor": "http://api.agromonitoring.com/image/1.0/10059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/image/1.0/11059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/image/1.0/12059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/image/1.0/13059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/image/1.0/14059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "tile": {
-            "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/10059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/11059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/12059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/13059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/14059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "stats": {
-            "ndvi": "http://api.agromonitoring.com/stats/1.0/12359cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/stats/1.0/13359cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/stats/1.0/14359cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "data": {
-            "truecolor": "http://api.agromonitoring.com/data/1.0/10159cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/data/1.0/11159cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/data/1.0/12259cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/data/1.0/13259cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/data/1.0/14259cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        }
-    },
-    {
-        "dt": 1506816000,
-        "type": "Landsat 8",
-        "dc": 100,
-        "cl": 66.3,
-        "sun": {
-            "elevation": 41.02773068,
-            "azimuth": 157.94043739
-        },
-        "image": {
-            "truecolor": "http://api.agromonitoring.com/image/1.0/00059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/image/1.0/01059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/image/1.0/02059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/image/1.0/03059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/image/1.0/04059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/image/1.0/05059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/image/1.0/06059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/image/1.0/07059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "tile": {
-            "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/00059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/01059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/02059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/03059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/04059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/05059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/06059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/07059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "stats": {
-            "ndvi": "http://api.agromonitoring.com/stats/1.0/02359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/stats/1.0/03359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/stats/1.0/04359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/stats/1.0/05359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/stats/1.0/06359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/stats/1.0/07359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "data": {
-            "truecolor": "http://api.agromonitoring.com/data/1.0/00159d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/data/1.0/01159d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/data/1.0/02259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/data/1.0/03259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/data/1.0/04259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/data/1.0/05259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/data/1.0/06259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/data/1.0/07259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        }
-    },
-    {
-        "dt": 1508198400,
-        "type": "Landsat 8",
-        "dc": 100,
-        "cl": 51.58,
-        "sun": {
-            "elevation": 36.709,
-            "azimuth": 160.426
-        },
-        "image": {
-            "truecolor": "http://api.agromonitoring.com/image/1.0/00059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/image/1.0/01059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/image/1.0/02059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/image/1.0/03059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/image/1.0/04059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/image/1.0/05059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/image/1.0/06059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/image/1.0/07059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "tile": {
-            "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/00059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/01059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/02059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/03059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/04059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/05059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/06059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/07059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "stats": {
-            "ndvi": "http://api.agromonitoring.com/stats/1.0/02359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/stats/1.0/03359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/stats/1.0/04359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/stats/1.0/05359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/stats/1.0/06359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/stats/1.0/07359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "data": {
-            "truecolor": "http://api.agromonitoring.com/data/1.0/00159e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/data/1.0/01159e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/data/1.0/02259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/data/1.0/03259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/data/1.0/04259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "nri": "http://api.agromonitoring.com/data/1.0/05259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "dswi": "http://api.agromonitoring.com/data/1.0/06259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndwi": "http://api.agromonitoring.com/data/1.0/07259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        }
-    },
-    {
-        "dt": 1508284800,
-        "type": "Sentinel-2",
-        "dc": 100,
-        "cl": 0.65,
-        "sun": {
-            "elevation": 37.218,
-            "azimuth": 166.526
-        },
-        "image": {
-            "truecolor": "http://api.agromonitoring.com/image/1.0/10059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/image/1.0/11059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/image/1.0/12059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/image/1.0/13059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/image/1.0/14059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "tile": {
-            "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/10059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/11059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/12059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/13059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/14059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "stats": {
-            "ndvi": "http://api.agromonitoring.com/stats/1.0/12359e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/stats/1.0/13359e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/stats/1.0/14359e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        },
-        "data": {
-            "truecolor": "http://api.agromonitoring.com/data/1.0/10159e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "falsecolor": "http://api.agromonitoring.com/data/1.0/11159e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "ndvi": "http://api.agromonitoring.com/data/1.0/12259e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi": "http://api.agromonitoring.com/data/1.0/13259e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-            "evi2": "http://api.agromonitoring.com/data/1.0/14259e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
-        }
+    "data": {
+        "truecolor": "http://api.agromonitoring.com/data/1.0/001597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/data/1.0/011597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/data/1.0/022597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/data/1.0/032597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/data/1.0/042597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/data/1.0/052597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/data/1.0/062597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/data/1.0/072597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
     }
-]
+}, {
+    "dt": 1502668800,
+    "type": "Landsat 8",
+    "dc": 100,
+    "cl": 100,
+    "sun": {
+        "elevation": 56.12542059,
+        "azimuth": 142.89056058
+    },
+    "image": {
+        "truecolor": "http://api.agromonitoring.com/image/1.0/0005990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/image/1.0/0105990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/image/1.0/0205990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/image/1.0/0305990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/image/1.0/0405990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/image/1.0/0505990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/image/1.0/0605990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/image/1.0/0705990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "tile": {
+        "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0005990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0105990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0205990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0305990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0405990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0505990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0605990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/0705990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "stats": {
+        "ndvi": "http://api.agromonitoring.com/stats/1.0/0235990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/stats/1.0/0335990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/stats/1.0/0435990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/stats/1.0/0535990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/stats/1.0/0635990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/stats/1.0/0735990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "data": {
+        "truecolor": "http://api.agromonitoring.com/data/1.0/0015990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/data/1.0/0115990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/data/1.0/0225990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/data/1.0/0325990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/data/1.0/0425990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/data/1.0/0525990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/data/1.0/0625990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/data/1.0/0725990e800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    }
+}, {
+    "dt": 1504051200,
+    "type": "Landsat 8",
+    "dc": 100,
+    "cl": 100,
+    "sun": {
+        "elevation": 51.65457217,
+        "azimuth": 148.31167731
+    },
+    "image": {
+        "truecolor": "http://api.agromonitoring.com/image/1.0/00059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/image/1.0/01059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/image/1.0/02059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/image/1.0/03059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/image/1.0/04059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/image/1.0/05059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/image/1.0/06059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/image/1.0/07059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "tile": {
+        "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/00059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/01059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/02059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/03059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/04059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/05059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/06059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/07059a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "stats": {
+        "ndvi": "http://api.agromonitoring.com/stats/1.0/02359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/stats/1.0/03359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/stats/1.0/04359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/stats/1.0/05359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/stats/1.0/06359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/stats/1.0/07359a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "data": {
+        "truecolor": "http://api.agromonitoring.com/data/1.0/00159a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/data/1.0/01159a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/data/1.0/02259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/data/1.0/03259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/data/1.0/04259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/data/1.0/05259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/data/1.0/06259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/data/1.0/07259a60000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    }
+}, {
+    "dt": 1505433600,
+    "type": "Landsat 8",
+    "dc": 100,
+    "cl": 100,
+    "sun": {
+        "elevation": 46.54283143,
+        "azimuth": 153.52627964
+    },
+    "image": {
+        "truecolor": "http://api.agromonitoring.com/image/1.0/00059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/image/1.0/01059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/image/1.0/02059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/image/1.0/03059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/image/1.0/04059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/image/1.0/05059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/image/1.0/06059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/image/1.0/07059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "tile": {
+        "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/00059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/01059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/02059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/03059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/04059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/05059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/06059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/07059bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "stats": {
+        "ndvi": "http://api.agromonitoring.com/stats/1.0/02359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/stats/1.0/03359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/stats/1.0/04359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/stats/1.0/05359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/stats/1.0/06359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/stats/1.0/07359bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "data": {
+        "truecolor": "http://api.agromonitoring.com/data/1.0/00159bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/data/1.0/01159bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/data/1.0/02259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/data/1.0/03259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/data/1.0/04259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/data/1.0/05259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/data/1.0/06259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/data/1.0/07259bb1800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    }
+}, {
+    "dt": 1506556800,
+    "type": "Sentinel-2",
+    "dc": 100,
+    "cl": 0.23,
+    "sun": {
+        "elevation": 44.373,
+        "azimuth": 162.787
+    },
+    "image": {
+        "truecolor": "http://api.agromonitoring.com/image/1.0/10059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/image/1.0/11059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/image/1.0/12059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/image/1.0/13059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/image/1.0/14059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "tile": {
+        "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/10059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/11059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/12059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/13059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/14059cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "stats": {
+        "ndvi": "http://api.agromonitoring.com/stats/1.0/12359cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/stats/1.0/13359cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/stats/1.0/14359cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "data": {
+        "truecolor": "http://api.agromonitoring.com/data/1.0/10159cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/data/1.0/11159cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/data/1.0/12259cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/data/1.0/13259cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/data/1.0/14259cc3b80/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    }
+}, {
+    "dt": 1506816000,
+    "type": "Landsat 8",
+    "dc": 100,
+    "cl": 66.3,
+    "sun": {
+        "elevation": 41.02773068,
+        "azimuth": 157.94043739
+    },
+    "image": {
+        "truecolor": "http://api.agromonitoring.com/image/1.0/00059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/image/1.0/01059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/image/1.0/02059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/image/1.0/03059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/image/1.0/04059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/image/1.0/05059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/image/1.0/06059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/image/1.0/07059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "tile": {
+        "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/00059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/01059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/02059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/03059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/04059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/05059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/06059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/07059d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "stats": {
+        "ndvi": "http://api.agromonitoring.com/stats/1.0/02359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/stats/1.0/03359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/stats/1.0/04359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/stats/1.0/05359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/stats/1.0/06359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/stats/1.0/07359d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "data": {
+        "truecolor": "http://api.agromonitoring.com/data/1.0/00159d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/data/1.0/01159d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/data/1.0/02259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/data/1.0/03259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/data/1.0/04259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/data/1.0/05259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/data/1.0/06259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/data/1.0/07259d03000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    }
+}, {
+    "dt": 1508198400,
+    "type": "Landsat 8",
+    "dc": 100,
+    "cl": 51.58,
+    "sun": {
+        "elevation": 36.709,
+        "azimuth": 160.426
+    },
+    "image": {
+        "truecolor": "http://api.agromonitoring.com/image/1.0/00059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/image/1.0/01059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/image/1.0/02059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/image/1.0/03059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/image/1.0/04059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/image/1.0/05059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/image/1.0/06059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/image/1.0/07059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "tile": {
+        "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/00059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/01059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/02059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/03059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/04059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/05059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/06059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/07059e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "stats": {
+        "ndvi": "http://api.agromonitoring.com/stats/1.0/02359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/stats/1.0/03359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/stats/1.0/04359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/stats/1.0/05359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/stats/1.0/06359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/stats/1.0/07359e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "data": {
+        "truecolor": "http://api.agromonitoring.com/data/1.0/00159e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/data/1.0/01159e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/data/1.0/02259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/data/1.0/03259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/data/1.0/04259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "nri": "http://api.agromonitoring.com/data/1.0/05259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "dswi": "http://api.agromonitoring.com/data/1.0/06259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndwi": "http://api.agromonitoring.com/data/1.0/07259e54800/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    }
+}, {
+    "dt": 1508284800,
+    "type": "Sentinel-2",
+    "dc": 100,
+    "cl": 0.65,
+    "sun": {
+        "elevation": 37.218,
+        "azimuth": 166.526
+    },
+    "image": {
+        "truecolor": "http://api.agromonitoring.com/image/1.0/10059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/image/1.0/11059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/image/1.0/12059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/image/1.0/13059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/image/1.0/14059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "tile": {
+        "truecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/10059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/11059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/12059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/13059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/tile/1.0/{z}/{x}/{y}/14059e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "stats": {
+        "ndvi": "http://api.agromonitoring.com/stats/1.0/12359e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/stats/1.0/13359e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/stats/1.0/14359e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    },
+    "data": {
+        "truecolor": "http://api.agromonitoring.com/data/1.0/10159e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "falsecolor": "http://api.agromonitoring.com/data/1.0/11159e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "ndvi": "http://api.agromonitoring.com/data/1.0/12259e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi": "http://api.agromonitoring.com/data/1.0/13259e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
+        "evi2": "http://api.agromonitoring.com/data/1.0/14259e69980/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f"
+    }
+}]

@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro API</title>
+    <!-- LEAFLET CSS IMPORT -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <!-- LEAFLET JS IMPORT -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -14,19 +23,42 @@
 
     </header>
     <nav>
-
+        <h1>Agro Dashboard - Mobile</h1>
     </nav>
     <main>
-        <h1>The start of something great</h1>
-        <div id="images">
-            <h2> Satellite Imagery </h2>
+        
+
+        <div id="mapSectionSelectors">
+            <div>
+                <label for="polygonSelector">Select Polygon</label>
+                <select id="polygonSelector">
+                </select>
+            </div>
+            <div>
+                <label for="imageTypeSelector">Select Image Type</label><select id="imageTypeSelector">
+                    <option value="truecolor">True Color</option>
+                    <option value="falsecolor">False Color</option>
+                    <option value="ndvi">NDVI</option>
+                    <option value="evi">EVI</option>
+                    <option value="evi2">EVI2</option>
+                    <option value="nri">NRI</option>
+                    <option value="dswi">DSWI</option>
+                    <option value="ndwi">NDWI</option>
+                </select>
+            </div>
         </div>
+        <div id="mapid"></div>
+        
+        <div id="dates">
+            <input type="date" id="datePicker">
+        </div>
+
     </main>
 
     <footer>
 
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>

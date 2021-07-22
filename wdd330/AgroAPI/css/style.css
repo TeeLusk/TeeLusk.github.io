@@ -1,10 +1,42 @@
+:root {
+  --main-blue: #2196f3;
+}
+
+
+
 #images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
-    width: 150px;
-    height: auto;
+  width: 150px;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h3 {
+  font-family: "Roboto-slab", sans-serif;
+  background-color: var(--main-blue);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: .5em;
+}
+
+main div {
+    margin: auto;
+}
+
+#mapSectionSelectors {
+    display: flex;
+}
+
+/* Leaflet.js */
+#mapid {
+  height: 500px;
+  width: 300px;
 }
