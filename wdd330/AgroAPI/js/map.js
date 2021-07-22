@@ -18,7 +18,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: mapboxAPI
 }).addTo(mymap);
 export function buildMap() {
-    fetch('http://api.agromonitoring.com/agro/1.0/polygons?appid=76a3900f4cbeb05dbb772bb061d4046f')
+    fetch('https://api.agromonitoring.com/agro/1.0/polygons?appid=76a3900f4cbeb05dbb772bb061d4046f')
         .then(function (res) {
             if (res.ok) {
                 return res.json();
@@ -38,7 +38,7 @@ export function buildMap() {
 
 
     // Fetch polygon coordinates
-    fetch(`http://api.agromonitoring.com/agro/1.0/polygons?appid=${AgroAPI}`)
+    fetch(`https://api.agromonitoring.com/agro/1.0/polygons?appid=${AgroAPI}`)
         .then(function (res) {
             if (res.ok) {
                 return res.json();
@@ -52,7 +52,7 @@ export function buildMap() {
             let polygon = L.polygon(polyCoords).addTo(mymap);
 
 
-            fetch(`http://api.agromonitoring.com/agro/1.0/image/search?start=${startTime}&end=${endTime}&polyid=${jsonObject[0].id}&appid=${AgroAPI}`)
+            fetch(`https://api.agromonitoring.com/agro/1.0/image/search?start=${startTime}&end=${endTime}&polyid=${jsonObject[0].id}&appid=${AgroAPI}`)
                 .then(function (res) {
                     if (res.ok) {
                         return res.json();
@@ -75,19 +75,6 @@ export function buildMap() {
         .catch(function (err) {
             console.log(`Fetch error: ${err.message}`);
         })
-
-
-
-    // var imageUrl = "http://api.agromonitoring.com/image/1.0/000597bd000/609b4bd4b5d88922bc02f1ab?appid=76a3900f4cbeb05dbb772bb061d4046f",
-    //     imageBounds = [
-    //         [42.423558, -112.575359],
-    //         [42.423558, -112.556305],
-    //         [42.444899, -112.556305],
-    //         [42.444899, -112.575359],
-    //         [42.423558, -112.575359]
-    //     ];
-    // L.imageOverlay(imageUrl, imageBounds).addTo(mymap);
-
 }
 
 export function switchLatitiudeLongitude(array) {
@@ -109,14 +96,3 @@ export function changeMap() {
     // REQ #2 - Get Image by Date and Image Type
 
 }
-
-// export function changePolygon(polygon) {
-//     // Remove old polygon
-//     if (mymap.hasLayer(polygon)) {
-//         mymap.removeLayer(polygon);
-//     }
-
-//     // Add new polygon
-//     polygon.addTo(mymap);
-//     mymap.fitBounds(polygon.getBounds());
-// }
